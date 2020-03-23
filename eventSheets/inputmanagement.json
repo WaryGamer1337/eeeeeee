@@ -1,0 +1,1792 @@
+{
+	"name": "InputManagement",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "InputManagement",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 7507557338589613
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 4806822689158794,
+							"parameters": {
+								"object-to-create": "VPad",
+								"layer": "0",
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 6090395844709057,
+							"parameters": {
+								"instance-variable": "Up",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 4334685297111526,
+							"parameters": {
+								"instance-variable": "Down",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 3576673885715529,
+							"parameters": {
+								"instance-variable": "Left",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 9131145069339216,
+							"parameters": {
+								"instance-variable": "Right",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 1416485332530768,
+							"parameters": {
+								"instance-variable": "Confirm",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 1654398118388641,
+							"parameters": {
+								"instance-variable": "Cancel",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 6912276595859616,
+							"parameters": {
+								"instance-variable": "Menu",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 4609263787067704
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 6426605950705829
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 6631016432276171,
+							"parameters": {
+								"instance-variable": "LastUp",
+								"value": "VPad.Up"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 8133791214538277,
+							"parameters": {
+								"instance-variable": "LastDown",
+								"value": "VPad.Down"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 6270572336755742,
+							"parameters": {
+								"instance-variable": "LastLeft",
+								"value": "VPad.Left"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 127816423584293,
+							"parameters": {
+								"instance-variable": "LastRight",
+								"value": "VPad.Right"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 1661304699295616,
+							"parameters": {
+								"instance-variable": "LastConfirm",
+								"value": "VPad.Confirm"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 397418474622189,
+							"parameters": {
+								"instance-variable": "LastCancel",
+								"value": "VPad.Cancel"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 2919921392010335,
+							"parameters": {
+								"instance-variable": "LastMenu",
+								"value": "VPad.Menu"
+							}
+						}
+					],
+					"sid": 8840813666946258
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 452053121247752
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 4308477622289035,
+							"parameters": {
+								"instance-variable": "Up",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 5796860298845933,
+							"parameters": {
+								"instance-variable": "Down",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 4746065936575897,
+							"parameters": {
+								"instance-variable": "Left",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 4970901921691344,
+							"parameters": {
+								"instance-variable": "Right",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 9875790490592976,
+							"parameters": {
+								"instance-variable": "Confirm",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 9807625275496326,
+							"parameters": {
+								"instance-variable": "Cancel",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "VPad",
+							"sid": 9590202895053036,
+							"parameters": {
+								"instance-variable": "Menu",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 4294682545513989
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Gamepad",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "DEADZONE",
+							"type": "number",
+							"initialValue": "25",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": true,
+							"sid": 347815105392105
+						},
+						{
+							"eventType": "variable",
+							"name": "ID",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": true,
+							"isConstant": false,
+							"sid": 2136621245663251
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "Gamepad",
+									"sid": 9741879000525306,
+									"parameters": {
+										"gamepad": "ID",
+										"axis": "left-analog-y-axis",
+										"comparison": 2,
+										"value": "-DEADZONE"
+									}
+								},
+								{
+									"id": "is-button-down",
+									"objectClass": "Gamepad",
+									"sid": 4368358773508708,
+									"parameters": {
+										"gamepad": "ID",
+										"button": "d-pad-up"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 3823286924588628,
+									"parameters": {
+										"instance-variable": "Up",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 4176538350632391,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "Gamepad",
+									"sid": 88363034135683,
+									"parameters": {
+										"gamepad": "ID",
+										"axis": "left-analog-y-axis",
+										"comparison": 4,
+										"value": "DEADZONE"
+									}
+								},
+								{
+									"id": "is-button-down",
+									"objectClass": "Gamepad",
+									"sid": 2124029133398757,
+									"parameters": {
+										"gamepad": "ID",
+										"button": "d-pad-down"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 5782082524190614,
+									"parameters": {
+										"instance-variable": "Down",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 4512975135500185,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "Gamepad",
+									"sid": 8926947896828816,
+									"parameters": {
+										"gamepad": "ID",
+										"axis": "left-analog-x-axis",
+										"comparison": 2,
+										"value": "-DEADZONE"
+									}
+								},
+								{
+									"id": "is-button-down",
+									"objectClass": "Gamepad",
+									"sid": 8456102855754586,
+									"parameters": {
+										"gamepad": "ID",
+										"button": "d-pad-left"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 5991560591094707,
+									"parameters": {
+										"instance-variable": "Left",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 1926108309430191,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-axis",
+									"objectClass": "Gamepad",
+									"sid": 8233388208284703,
+									"parameters": {
+										"gamepad": "ID",
+										"axis": "left-analog-x-axis",
+										"comparison": 4,
+										"value": "DEADZONE"
+									}
+								},
+								{
+									"id": "is-button-down",
+									"objectClass": "Gamepad",
+									"sid": 5630637615353887,
+									"parameters": {
+										"gamepad": "ID",
+										"button": "d-pad-right"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 2707172931762973,
+									"parameters": {
+										"instance-variable": "Right",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 344060131127289,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-button-down",
+									"objectClass": "Gamepad",
+									"sid": 4140440688929401,
+									"parameters": {
+										"gamepad": "ID",
+										"button": "button-a"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 4460183267387267,
+									"parameters": {
+										"instance-variable": "Confirm",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 7561975166971555
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-button-down",
+									"objectClass": "Gamepad",
+									"sid": 8796805238976963,
+									"parameters": {
+										"gamepad": "ID",
+										"button": "button-x"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 3124488412088355,
+									"parameters": {
+										"instance-variable": "Cancel",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 3430992126100434
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-button-down",
+									"objectClass": "Gamepad",
+									"sid": 5442644202940229,
+									"parameters": {
+										"gamepad": "ID",
+										"button": "start-menu"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 3912917353377025,
+									"parameters": {
+										"instance-variable": "Menu",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 4634220243252997
+						}
+					],
+					"sid": 2568520299010306
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Keyboard",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 3552193861153495,
+									"parameters": {
+										"key": 38
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 4868003248484891,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 5408598788897175,
+									"parameters": {
+										"instance-variable": "Up",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 1936143924239781,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 594305958852773,
+									"parameters": {
+										"key": 40
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 1628045043863816,
+									"parameters": {
+										"key": 83
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 2778876906348653,
+									"parameters": {
+										"instance-variable": "Down",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 5325358493886754,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 1299449188102976,
+									"parameters": {
+										"key": 37
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 6476670649189529,
+									"parameters": {
+										"key": 65
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 6936900522333045,
+									"parameters": {
+										"instance-variable": "Left",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 7872809225198566,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 7423979685350929,
+									"parameters": {
+										"key": 39
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 6992990226848274,
+									"parameters": {
+										"key": 68
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 2987165759825812,
+									"parameters": {
+										"instance-variable": "Right",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 2614740999858778,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 1186023697088874,
+									"parameters": {
+										"key": 90
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 5599487570691262,
+									"parameters": {
+										"key": 13
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 6612361141996722,
+									"parameters": {
+										"instance-variable": "Confirm",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 1497366882496331,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 5021788616537434,
+									"parameters": {
+										"key": 88
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 1588947091940208,
+									"parameters": {
+										"key": 16
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 4252777994439934,
+									"parameters": {
+										"instance-variable": "Cancel",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 4623232669904996,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 1509728579883262,
+									"parameters": {
+										"key": 67
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 596894329683083,
+									"parameters": {
+										"key": 17
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "VPad",
+									"sid": 4792830248470232,
+									"parameters": {
+										"instance-variable": "Menu",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 1556078509265339,
+							"isOrBlock": true
+						}
+					],
+					"sid": 4884121587429975
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Touch",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-on-mobile-device",
+									"objectClass": "System",
+									"sid": 804541384717717
+								}
+							],
+							"actions": [],
+							"sid": 795051598369363,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "MobileWarned",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": true,
+									"isConstant": false,
+									"sid": 567741314908991
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-start-of-layout",
+											"objectClass": "System",
+											"sid": 380082553913865
+										}
+									],
+									"actions": [
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 370913479255376,
+											"parameters": {
+												"object-to-create": "TouchA",
+												"layer": "\"Touch\"",
+												"x": "592",
+												"y": "48"
+											}
+										},
+										{
+											"id": "create-object",
+											"objectClass": "System",
+											"sid": 530825832723344,
+											"parameters": {
+												"object-to-create": "TouchB",
+												"layer": "\"Touch\"",
+												"x": "480",
+												"y": "48"
+											}
+										}
+									],
+									"sid": 236920128668373,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 505437346533428,
+													"parameters": {
+														"variable": "MobileWarned",
+														"comparison": 0,
+														"value": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 375818885423135,
+													"parameters": {
+														"object-to-create": "DefaultFont",
+														"layer": "\"Touch\"",
+														"x": "16",
+														"y": "400"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "DefaultFont",
+													"sid": 222893444387848,
+													"parameters": {
+														"instance-variable": "Name",
+														"value": "\"MobileWarn\""
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "DefaultFont",
+													"sid": 312368363882614,
+													"parameters": {
+														"instance-variable": "Timeout",
+														"value": "3"
+													}
+												},
+												{
+													"id": "set-size",
+													"objectClass": "DefaultFont",
+													"sid": 327090629639428,
+													"parameters": {
+														"width": "512",
+														"height": "80"
+													}
+												},
+												{
+													"id": "set-scale",
+													"objectClass": "DefaultFont",
+													"sid": 946531600717532,
+													"parameters": {
+														"scale": "2"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "DefaultFont",
+													"sid": 989636852540768,
+													"parameters": {
+														"text": "\"Don't play on mobile!\" & newline & \"You have been warned!\""
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 713870393895474,
+													"parameters": {
+														"variable": "MobileWarned",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 667540765836737
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-any-touch-start",
+											"objectClass": "Touch",
+											"sid": 453502036546672
+										}
+									],
+									"actions": [
+										{
+											"id": "request-fullscreen",
+											"objectClass": "Browser",
+											"sid": 904088374612251,
+											"parameters": {
+												"mode": "stretch-integer-letterbox-scale",
+												"navigation-ui": "auto"
+											}
+										}
+									],
+									"sid": 280603110395217
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-any-touch-start",
+											"objectClass": "Touch",
+											"sid": 862379527794763
+										},
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 651137451437577,
+											"parameters": {
+												"first-value": "TouchDPad.Count",
+												"comparison": 0,
+												"second-value": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 745134333750571,
+									"children": [
+										{
+											"eventType": "variable",
+											"name": "CanvasX",
+											"type": "number",
+											"initialValue": "0",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": false,
+											"sid": 200913029347146
+										},
+										{
+											"eventType": "variable",
+											"name": "CanvasY",
+											"type": "number",
+											"initialValue": "0",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": false,
+											"sid": 278201514538128
+										},
+										{
+											"eventType": "variable",
+											"name": "X",
+											"type": "number",
+											"initialValue": "0",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": false,
+											"sid": 556897614785245
+										},
+										{
+											"eventType": "variable",
+											"name": "Y",
+											"type": "number",
+											"initialValue": "0",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": false,
+											"sid": 478425805027930
+										},
+										{
+											"eventType": "variable",
+											"name": "StartDPad",
+											"type": "number",
+											"initialValue": "1",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": false,
+											"sid": 959706783019112
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "every-tick",
+													"objectClass": "System",
+													"sid": 839198326880009
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 469766991599153,
+													"parameters": {
+														"variable": "CanvasX",
+														"value": "Touch.AbsoluteXForID(Touch.TouchID)"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 663637905290338,
+													"parameters": {
+														"variable": "CanvasY",
+														"value": "Touch.AbsoluteYForID(Touch.TouchID)"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 268494791391574,
+													"parameters": {
+														"variable": "X",
+														"value": "CanvasToLayerX(\"Touch\", CanvasX, CanvasY)"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 579266858650583,
+													"parameters": {
+														"variable": "Y",
+														"value": "CanvasToLayerY(\"Touch\", CanvasX, CanvasY)"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 893842085849600,
+													"parameters": {
+														"variable": "StartDPad",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 937309899299078
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-overlapping-point",
+													"objectClass": "System",
+													"sid": 372409729378271,
+													"parameters": {
+														"object": "TouchA",
+														"x": "X",
+														"y": "Y"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 903377270620000,
+													"parameters": {
+														"variable": "StartDPad",
+														"value": "0"
+													}
+												}
+											],
+											"sid": 856032958932707
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-overlapping-point",
+													"objectClass": "System",
+													"sid": 955997019374758,
+													"parameters": {
+														"object": "TouchB",
+														"x": "X",
+														"y": "Y"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 643312090155452,
+													"parameters": {
+														"variable": "StartDPad",
+														"value": "0"
+													}
+												}
+											],
+											"sid": 231552480403004
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 444245094889309,
+													"parameters": {
+														"variable": "StartDPad",
+														"comparison": 0,
+														"value": "1"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "create-object",
+													"objectClass": "System",
+													"sid": 555072147695984,
+													"parameters": {
+														"object-to-create": "TouchDPad",
+														"layer": "\"Touch\"",
+														"x": "X",
+														"y": "Y"
+													}
+												},
+												{
+													"id": "set-instvar-value",
+													"objectClass": "TouchDPad",
+													"sid": 797711746427196,
+													"parameters": {
+														"instance-variable": "TouchID",
+														"value": "Touch.TouchID"
+													}
+												}
+											],
+											"sid": 786327277455568
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-touched-object",
+											"objectClass": "Touch",
+											"sid": 131505258518113,
+											"parameters": {
+												"object": "TouchA"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "TouchA",
+											"sid": 600728178781912,
+											"parameters": {
+												"instance-variable": "TouchID",
+												"comparison": 0,
+												"value": "-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "TouchA",
+											"sid": 447619448018485,
+											"parameters": {
+												"instance-variable": "TouchID",
+												"value": "Touch.TouchID"
+											}
+										}
+									],
+									"sid": 156611426026105
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-touched-object",
+											"objectClass": "Touch",
+											"sid": 209901264075008,
+											"parameters": {
+												"object": "TouchB"
+											}
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "TouchB",
+											"sid": 397624656428695,
+											"parameters": {
+												"instance-variable": "TouchID",
+												"comparison": 0,
+												"value": "-1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "TouchB",
+											"sid": 408389051827014,
+											"parameters": {
+												"instance-variable": "TouchID",
+												"value": "Touch.TouchID"
+											}
+										}
+									],
+									"sid": 262160649453265
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-any-touch-end",
+											"objectClass": "Touch",
+											"sid": 743999052926286
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "TouchA",
+											"sid": 671198875808570,
+											"parameters": {
+												"instance-variable": "TouchID",
+												"comparison": 0,
+												"value": "Touch.TouchID"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "TouchA",
+											"sid": 565112206990156,
+											"parameters": {
+												"instance-variable": "TouchID",
+												"value": "-1"
+											}
+										}
+									],
+									"sid": 510145506237579
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-any-touch-end",
+											"objectClass": "Touch",
+											"sid": 651209601277116
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "TouchB",
+											"sid": 442375252565031,
+											"parameters": {
+												"instance-variable": "TouchID",
+												"comparison": 0,
+												"value": "Touch.TouchID"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "TouchB",
+											"sid": 603323091113707,
+											"parameters": {
+												"instance-variable": "TouchID",
+												"value": "-1"
+											}
+										}
+									],
+									"sid": 854691349928665
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-any-touch-end",
+											"objectClass": "Touch",
+											"sid": 654408151890593
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "TouchDPad",
+											"sid": 958165339942242,
+											"parameters": {
+												"instance-variable": "TouchID",
+												"comparison": 0,
+												"value": "Touch.TouchID"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "destroy",
+											"objectClass": "TouchDPad",
+											"sid": 930891711947960
+										}
+									],
+									"sid": 455910532065050
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-two-values",
+											"objectClass": "System",
+											"sid": 347847542826581,
+											"parameters": {
+												"first-value": "TouchDPad.Count",
+												"comparison": 4,
+												"second-value": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 618513189653011,
+									"children": [
+										{
+											"eventType": "variable",
+											"name": "CanvasX",
+											"type": "number",
+											"initialValue": "0",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": false,
+											"sid": 677585580385193
+										},
+										{
+											"eventType": "variable",
+											"name": "CanvasY",
+											"type": "number",
+											"initialValue": "0",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": false,
+											"sid": 921640891091010
+										},
+										{
+											"eventType": "variable",
+											"name": "X",
+											"type": "number",
+											"initialValue": "0",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": false,
+											"sid": 759293089368178
+										},
+										{
+											"eventType": "variable",
+											"name": "Y",
+											"type": "number",
+											"initialValue": "0",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": false,
+											"sid": 891678533493877
+										},
+										{
+											"eventType": "variable",
+											"name": "TOUCH_ZONE",
+											"type": "number",
+											"initialValue": "24",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": true,
+											"sid": 845876408649566
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "every-tick",
+													"objectClass": "System",
+													"sid": 682704827463364
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 241295947317404,
+													"parameters": {
+														"variable": "CanvasX",
+														"value": "Touch.AbsoluteXForID(TouchDPad.TouchID)"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 603206603122152,
+													"parameters": {
+														"variable": "CanvasY",
+														"value": "Touch.AbsoluteYForID(TouchDPad.TouchID)"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 431857125261668,
+													"parameters": {
+														"variable": "X",
+														"value": "CanvasToLayerX(\"Touch\", CanvasX, CanvasY)"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 112872418539731,
+													"parameters": {
+														"variable": "Y",
+														"value": "CanvasToLayerY(\"Touch\", CanvasX, CanvasY)"
+													}
+												}
+											],
+											"sid": 610269434621506
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 149136532260509,
+													"parameters": {
+														"first-value": "Y",
+														"comparison": 3,
+														"second-value": "TouchDPad.Y - TOUCH_ZONE"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "VPad",
+													"sid": 773694582267750,
+													"parameters": {
+														"instance-variable": "Up",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 849498678331174
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 830947680209022,
+													"parameters": {
+														"first-value": "Y",
+														"comparison": 5,
+														"second-value": "TouchDPad.Y + TOUCH_ZONE"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "VPad",
+													"sid": 860432365548781,
+													"parameters": {
+														"instance-variable": "Down",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 809499936534555
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 233135193669790,
+													"parameters": {
+														"first-value": "X",
+														"comparison": 3,
+														"second-value": "TouchDPad.X - TOUCH_ZONE"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "VPad",
+													"sid": 556463825592813,
+													"parameters": {
+														"instance-variable": "Left",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 833954426944866
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 167704999073270,
+													"parameters": {
+														"first-value": "X",
+														"comparison": 5,
+														"second-value": "TouchDPad.X + TOUCH_ZONE"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-instvar-value",
+													"objectClass": "VPad",
+													"sid": 883303417801571,
+													"parameters": {
+														"instance-variable": "Right",
+														"value": "1"
+													}
+												}
+											],
+											"sid": 590163719983862
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 569721919845758,
+											"parameters": {
+												"object": "TouchButton"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 137791190479244,
+									"children": [
+										{
+											"eventType": "variable",
+											"name": "CanvasX",
+											"type": "number",
+											"initialValue": "0",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": false,
+											"sid": 225156230173404
+										},
+										{
+											"eventType": "variable",
+											"name": "CanvasY",
+											"type": "number",
+											"initialValue": "0",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": false,
+											"sid": 246582234589773
+										},
+										{
+											"eventType": "variable",
+											"name": "X",
+											"type": "number",
+											"initialValue": "0",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": false,
+											"sid": 926381871953278
+										},
+										{
+											"eventType": "variable",
+											"name": "Y",
+											"type": "number",
+											"initialValue": "0",
+											"comment": "",
+											"isStatic": false,
+											"isConstant": false,
+											"sid": 870371977719287
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "every-tick",
+													"objectClass": "System",
+													"sid": 173663799341533
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 126163555432130,
+													"parameters": {
+														"variable": "CanvasX",
+														"value": "Touch.AbsoluteXForID(TouchButton.TouchID)"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 730704860160591,
+													"parameters": {
+														"variable": "CanvasY",
+														"value": "Touch.AbsoluteYForID(TouchButton.TouchID)"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 667242117862749,
+													"parameters": {
+														"variable": "X",
+														"value": "CanvasToLayerX(\"Touch\", CanvasX, CanvasY)"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 984069909766498,
+													"parameters": {
+														"variable": "Y",
+														"value": "CanvasToLayerY(\"Touch\", CanvasX, CanvasY)"
+													}
+												},
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "TouchButton",
+													"sid": 931511050509179,
+													"parameters": {
+														"instance-variable": "Pressed",
+														"value": "false"
+													}
+												}
+											],
+											"sid": 557329239365404
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-overlapping-point",
+													"objectClass": "System",
+													"sid": 625346223352958,
+													"parameters": {
+														"object": "TouchButton",
+														"x": "X",
+														"y": "Y"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-boolean-instvar",
+													"objectClass": "TouchButton",
+													"sid": 962182570938899,
+													"parameters": {
+														"instance-variable": "Pressed",
+														"value": "true"
+													}
+												}
+											],
+											"sid": 160251371255659
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "TouchButton",
+													"sid": 961696175702950,
+													"parameters": {
+														"instance-variable": "Pressed"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "TouchButton",
+													"sid": 338639669239050,
+													"parameters": {
+														"animation": "\"Pressed\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 139855616301050
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-boolean-instance-variable-set",
+													"objectClass": "TouchButton",
+													"sid": 358330221063880,
+													"parameters": {
+														"instance-variable": "Pressed"
+													},
+													"isInverted": true
+												}
+											],
+											"actions": [
+												{
+													"id": "set-animation",
+													"objectClass": "TouchButton",
+													"sid": 895539042729724,
+													"parameters": {
+														"animation": "\"Default\"",
+														"from": "beginning"
+													}
+												}
+											],
+											"sid": 716865146817964
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "TouchA",
+											"sid": 785150688927401,
+											"parameters": {
+												"instance-variable": "Pressed"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "VPad",
+											"sid": 711878732618324,
+											"parameters": {
+												"instance-variable": "Confirm",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 161667019401513
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "TouchB",
+											"sid": 119729908214219,
+											"parameters": {
+												"instance-variable": "Pressed"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-instvar-value",
+											"objectClass": "VPad",
+											"sid": 461683378764747,
+											"parameters": {
+												"instance-variable": "Cancel",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 866109962891615
+								}
+							]
+						}
+					],
+					"sid": 726194741738483
+				}
+			],
+			"sid": 6386108857925641
+		}
+	],
+	"sid": 401523957709879
+}

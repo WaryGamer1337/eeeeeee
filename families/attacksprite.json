@@ -1,0 +1,26 @@
+{
+	"name": "AttackSprite",
+	"plugin-id": "Sprite",
+	"sid": 6631597198329078,
+	"instanceVariables": [
+		{
+			"name": "Damage",
+			"type": "number",
+			"desc": "",
+			"sid": 1009715326578042
+		},
+		{
+			"name": "Karma",
+			"type": "number",
+			"desc": "",
+			"sid": 1305040970412396
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"GasterBlaster",
+		"MenuBoneBottom",
+		"MenuBoneLeft"
+	]
+}

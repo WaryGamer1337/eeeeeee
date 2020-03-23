@@ -1,0 +1,1113 @@
+{
+	"name": "Menus",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Menus",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 2536306279577205
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "MenuStack",
+							"sid": 6521126164740445,
+							"parameters": {
+								"width": "1",
+								"height": "2",
+								"depth": "1"
+							}
+						},
+						{
+							"id": "set-at-x",
+							"objectClass": "MenuStack",
+							"sid": 2237702793427054,
+							"parameters": {
+								"x": "0",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-at-xy",
+							"objectClass": "MenuStack",
+							"sid": 716159479864057,
+							"parameters": {
+								"x": "0",
+								"y": "1",
+								"value": "\"\""
+							}
+						}
+					],
+					"sid": 8695406175781546
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 2564267408156807,
+							"parameters": {
+								"name": "\"MenuBackAction\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-at-xy",
+							"objectClass": "MenuStack",
+							"sid": 9110991041588692,
+							"parameters": {
+								"x": "MenuStack.Width-1",
+								"y": "1",
+								"value": "Function.Param(0)"
+							}
+						}
+					],
+					"sid": 4828060419500584
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 6093544036389522,
+							"parameters": {
+								"name": "\"MenuSelect\""
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "MenuItem",
+							"sid": 8318217981666953,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "MenuStack.Back"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 6812480347916221,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "ID",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 2815912854738037
+						},
+						{
+							"eventType": "variable",
+							"name": "X",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 8524770482276571
+						},
+						{
+							"eventType": "variable",
+							"name": "Y",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 9238547187654584
+						},
+						{
+							"eventType": "variable",
+							"name": "TargetID",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 233166752012437
+						},
+						{
+							"eventType": "variable",
+							"name": "TargetDist",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 2410064365196961
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 4272555456716721
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 4594994607758385,
+									"parameters": {
+										"variable": "ID",
+										"value": "MenuItem.ID"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 696878987565706,
+									"parameters": {
+										"variable": "X",
+										"value": "MenuItem.X"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 8293651089226726,
+									"parameters": {
+										"variable": "Y",
+										"value": "MenuItem.Y"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 9776927128359744,
+									"parameters": {
+										"variable": "TargetID",
+										"value": "-1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 1609227162741931,
+									"parameters": {
+										"variable": "TargetDist",
+										"value": "Infinity"
+									}
+								}
+							],
+							"sid": 1594152053817437
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-all",
+									"objectClass": "System",
+									"sid": 1653500525400594,
+									"parameters": {
+										"object": "MenuItem"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "MenuItem",
+									"sid": 6364681126252615,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 1,
+										"value": "ID"
+									}
+								},
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 5387478993854357,
+									"parameters": {
+										"object": "MenuItem"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 8905070602913116,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "Ang",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 7217441111294608
+								},
+								{
+									"eventType": "variable",
+									"name": "Dist",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 1707862956084376
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 8217736276366752
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 8249840543647935,
+											"parameters": {
+												"variable": "Ang",
+												"value": "angle(X, Y, MenuItem.X, MenuItem.Y)"
+											}
+										}
+									],
+									"sid": 4024397130339288
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-within-angle",
+											"objectClass": "System",
+											"sid": 4670233778268817,
+											"parameters": {
+												"angle-1": "Ang",
+												"within": "0.5",
+												"angle-2": "Function.Param(0)*90"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 2878356591442433,
+											"parameters": {
+												"variable": "Dist",
+												"value": "distance(X, Y, MenuItem.X, MenuItem.Y)"
+											}
+										}
+									],
+									"sid": 3221251959880023,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 7408325317196445,
+													"parameters": {
+														"variable": "Dist",
+														"comparison": 2,
+														"value": "TargetDist"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 6677787101670142,
+													"parameters": {
+														"variable": "TargetDist",
+														"value": "Dist"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 7672361800870457,
+													"parameters": {
+														"variable": "TargetID",
+														"value": "MenuItem.ID"
+													}
+												}
+											],
+											"sid": 8763702995733969
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 6840381072597691,
+									"parameters": {
+										"variable": "TargetID",
+										"comparison": 0,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 9719461567624534,
+									"parameters": {
+										"variable": "TargetDist",
+										"value": "-Infinity"
+									}
+								}
+							],
+							"sid": 6829704236924412
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 1946523089989991,
+									"parameters": {
+										"variable": "TargetID",
+										"comparison": 0,
+										"value": "-1"
+									}
+								},
+								{
+									"id": "pick-all",
+									"objectClass": "System",
+									"sid": 5495910486778289,
+									"parameters": {
+										"object": "MenuItem"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "MenuItem",
+									"sid": 1200038864830058,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 1,
+										"value": "ID"
+									}
+								},
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 1002550783929431,
+									"parameters": {
+										"object": "MenuItem"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 7205705008682332,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "Ang",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 1649473131817865
+								},
+								{
+									"eventType": "variable",
+									"name": "Dist",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 6161590805861242
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 6644303941234649
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 8469540403391451,
+											"parameters": {
+												"variable": "Ang",
+												"value": "angle(X, Y, MenuItem.X, MenuItem.Y)"
+											}
+										}
+									],
+									"sid": 3288759695950013
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-within-angle",
+											"objectClass": "System",
+											"sid": 3642588278070715,
+											"parameters": {
+												"angle-1": "Ang",
+												"within": "0.5",
+												"angle-2": "Function.Param(0)*90 - 180"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 6365109525161081,
+											"parameters": {
+												"variable": "Dist",
+												"value": "distance(X, Y, MenuItem.X, MenuItem.Y)"
+											}
+										}
+									],
+									"sid": 2101686034581306,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-eventvar",
+													"objectClass": "System",
+													"sid": 8685340577799612,
+													"parameters": {
+														"variable": "Dist",
+														"comparison": 4,
+														"value": "TargetDist"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 282073525690326,
+													"parameters": {
+														"variable": "TargetDist",
+														"value": "Dist"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 1729884442476336,
+													"parameters": {
+														"variable": "TargetID",
+														"value": "MenuItem.ID"
+													}
+												}
+											],
+											"sid": 4105919903643933
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 7794111895385165,
+									"parameters": {
+										"variable": "TargetID",
+										"comparison": 1,
+										"value": "-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-at-x",
+									"objectClass": "MenuStack",
+									"sid": 8260832488824598,
+									"parameters": {
+										"x": "MenuStack.Width-1",
+										"value": "TargetID"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 8688491376371888,
+									"parameters": {
+										"audio-file": "MenuCursor",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 9469077732291460
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 8551949843133107,
+							"parameters": {
+								"name": "\"RunMenu\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 6223600297693287,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "VPad",
+									"sid": 3614830499205843,
+									"parameters": {
+										"instance-variable": "Confirm",
+										"comparison": 4,
+										"value": "VPad.LastConfirm"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "MenuItem",
+									"sid": 2942145973121762,
+									"parameters": {
+										"instance-variable": "ID",
+										"comparison": 0,
+										"value": "MenuStack.Back"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "MenuItem",
+									"sid": 3593834327907471,
+									"parameters": {
+										"instance-variable": "Action",
+										"comparison": 1,
+										"value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 435889489248309,
+									"parameters": {
+										"type": "log",
+										"message": "\"MenuConfirm on tick \" & tickcount"
+									}
+								},
+								{
+									"id": "push",
+									"objectClass": "MenuStack",
+									"sid": 1536698611713637,
+									"parameters": {
+										"where": "back",
+										"value": "0",
+										"axis": "x"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 4344933988603167,
+									"parameters": {
+										"name": "MenuItem.Action",
+										"parameter-n": []
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 2924208778412062,
+									"parameters": {
+										"audio-file": "MenuSelect",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 6930416785468451
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 308674648687820
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "VPad",
+									"sid": 4808674276307461,
+									"parameters": {
+										"instance-variable": "Cancel",
+										"comparison": 4,
+										"value": "VPad.LastCancel"
+									}
+								},
+								{
+									"id": "compare-at-xy",
+									"objectClass": "MenuStack",
+									"sid": 3783945059357823,
+									"parameters": {
+										"x": "MenuStack.Width-1",
+										"y": "1",
+										"comparison": 1,
+										"value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "log",
+									"objectClass": "Browser",
+									"sid": 154371849874513,
+									"parameters": {
+										"type": "log",
+										"message": "\"MenuBack on tick \" & tickcount"
+									}
+								}
+							],
+							"sid": 4734399919399368,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "FuncName",
+									"type": "string",
+									"initialValue": "",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 7156101104530386
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 122651102211695
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 1553611434833798,
+											"parameters": {
+												"variable": "FuncName",
+												"value": "MenuStack.At(MenuStack.Width-1, 1)"
+											}
+										},
+										{
+											"id": "pop",
+											"objectClass": "MenuStack",
+											"sid": 7479290068950634,
+											"parameters": {
+												"where": "back",
+												"axis": "x"
+											}
+										},
+										{
+											"id": "call-function",
+											"objectClass": "Function",
+											"sid": 6459164775285865,
+											"parameters": {
+												"name": "FuncName",
+												"parameter-n": []
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 57483967232436,
+											"parameters": {
+												"audio-file": "MenuSelect",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
+										}
+									],
+									"sid": 8656451840730673
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 287766461887018
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "VPad",
+									"sid": 898589353683862,
+									"parameters": {
+										"instance-variable": "Right",
+										"comparison": 4,
+										"value": "VPad.LastRight"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 4772068308290439,
+									"parameters": {
+										"name": "\"MenuSelect\"",
+										"parameter-n": [
+											"0"
+										]
+									}
+								}
+							],
+							"sid": 3623176702869784
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 794848382564229
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "VPad",
+									"sid": 3125005000489827,
+									"parameters": {
+										"instance-variable": "Down",
+										"comparison": 4,
+										"value": "VPad.LastDown"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 7640007335314225,
+									"parameters": {
+										"name": "\"MenuSelect\"",
+										"parameter-n": [
+											"1"
+										]
+									}
+								}
+							],
+							"sid": 6779122092723648
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 951370061259571
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "VPad",
+									"sid": 4503769246353106,
+									"parameters": {
+										"instance-variable": "Left",
+										"comparison": 4,
+										"value": "VPad.LastLeft"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 4837707612071206,
+									"parameters": {
+										"name": "\"MenuSelect\"",
+										"parameter-n": [
+											"2"
+										]
+									}
+								}
+							],
+							"sid": 660878264850284
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 115749243633628
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "VPad",
+									"sid": 4912713479807678,
+									"parameters": {
+										"instance-variable": "Up",
+										"comparison": 4,
+										"value": "VPad.LastUp"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 42579712605309,
+									"parameters": {
+										"name": "\"MenuSelect\"",
+										"parameter-n": [
+											"3"
+										]
+									}
+								}
+							],
+							"sid": 241784578323823
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 8221596592820572,
+									"parameters": {
+										"object": "MenuItem"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "DefaultFont",
+									"sid": 8846094253967087,
+									"parameters": {
+										"instance-variable": "Name",
+										"comparison": 0,
+										"value": "\"Menu\" & MenuItem.ID"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "DefaultFont",
+									"sid": 8960724429087305,
+									"parameters": {
+										"x": "MenuItem.X + 32"
+									}
+								},
+								{
+									"id": "set-y",
+									"objectClass": "DefaultFont",
+									"sid": 9751887006413896,
+									"parameters": {
+										"y": "MenuItem.Y"
+									}
+								}
+							],
+							"sid": 2235330471124206
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 766090744744271,
+							"parameters": {
+								"name": "\"CreateMenuItem\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 248654370483502,
+							"parameters": {
+								"object-to-create": "MenuItem",
+								"layer": "Function.Param(0)",
+								"x": "Function.Param(1)",
+								"y": "Function.Param(2)"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "MenuItem",
+							"sid": 295255653641432,
+							"parameters": {
+								"instance-variable": "ID",
+								"value": "Function.Param(3)"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "MenuItem",
+							"sid": 266107689626120,
+							"parameters": {
+								"instance-variable": "Text",
+								"value": "Function.Param(4)"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "MenuItem",
+							"sid": 596023311969026,
+							"parameters": {
+								"instance-variable": "Action",
+								"value": "Function.Param(5)"
+							}
+						},
+						{
+							"id": "set-return-value",
+							"objectClass": "Function",
+							"sid": 511741908287164,
+							"parameters": {
+								"value": "MenuItem.UID"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 593416691206548,
+							"parameters": {
+								"object-to-create": "DefaultFont",
+								"layer": "0",
+								"x": "MenuItem.X + 32",
+								"y": "MenuItem.Y"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "DefaultFont",
+							"sid": 405916427729181,
+							"parameters": {
+								"width": "512",
+								"height": "96"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "DefaultFont",
+							"sid": 161240728466197,
+							"parameters": {
+								"scale": "2"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DefaultFont",
+							"sid": 300716580761740,
+							"parameters": {
+								"text": "MenuItem.Text"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "DefaultFont",
+							"sid": 994902184646253,
+							"parameters": {
+								"instance-variable": "Name",
+								"value": "\"Menu\" & MenuItem.ID"
+							}
+						}
+					],
+					"sid": 198398755542197,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "MenuItem",
+									"sid": 6476568399148247,
+									"parameters": {
+										"instance-variable": "Action",
+										"comparison": 0,
+										"value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "DefaultFont",
+									"sid": 6030058075119234,
+									"parameters": {
+										"effect": "\"Tint\"",
+										"parameter-index": "0",
+										"value": "50"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "DefaultFont",
+									"sid": 5748182833587719,
+									"parameters": {
+										"effect": "\"Tint\"",
+										"parameter-index": "1",
+										"value": "50"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "DefaultFont",
+									"sid": 5671655371911134,
+									"parameters": {
+										"effect": "\"Tint\"",
+										"parameter-index": "2",
+										"value": "50"
+									}
+								}
+							],
+							"sid": 4459952550089159
+						}
+					]
+				}
+			],
+			"sid": 9544187866392408
+		}
+	],
+	"sid": 690042242173804
+}

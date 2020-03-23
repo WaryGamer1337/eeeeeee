@@ -1,0 +1,1528 @@
+{
+	"name": "MainMenu",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "InputManagement"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Fonts"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "RPGText"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "AttackLoader"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "Menus"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 301026708660067
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 493187173332363,
+					"parameters": {
+						"object-to-create": "BattleFont",
+						"layer": "0",
+						"x": "8",
+						"y": "416"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "BattleFont",
+					"sid": 605342153352148,
+					"parameters": {
+						"instance-variable": "Name",
+						"value": "\"Update\""
+					}
+				},
+				{
+					"id": "set-width",
+					"objectClass": "BattleFont",
+					"sid": 511018501210371,
+					"parameters": {
+						"width": "640"
+					}
+				},
+				{
+					"id": "set-height",
+					"objectClass": "BattleFont",
+					"sid": 834519197109982,
+					"parameters": {
+						"height": "64"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "BattleFont",
+					"sid": 997228410907339,
+					"parameters": {
+						"text": "\"UPDATE TEXT\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BattleFont",
+					"sid": 633456208298692,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 194677073697328
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-update-found-sw",
+					"objectClass": "Browser",
+					"sid": 271470835549957
+				}
+			],
+			"actions": [
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 186182218521078,
+					"parameters": {
+						"type": "log",
+						"message": "\"[DEBUG] Update found\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 871492164898327,
+					"parameters": {
+						"seconds": "0"
+					}
+				}
+			],
+			"sid": 566182451496929,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "RPGText",
+							"sid": 408005518521694,
+							"parameters": {
+								"instance-variable": "Name",
+								"comparison": 0,
+								"value": "\"Update\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "BattleFont",
+							"sid": 234881402244069,
+							"parameters": {
+								"text": "\"UPDATE AVAILABLE.\" & newline & \"DOWNLOADING...\""
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "RPGText",
+							"sid": 642147750921346,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 735021892660141
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-update-ready-sw",
+					"objectClass": "Browser",
+					"sid": 903434434188712
+				}
+			],
+			"actions": [
+				{
+					"id": "log",
+					"objectClass": "Browser",
+					"sid": 591757470747617,
+					"parameters": {
+						"type": "log",
+						"message": "\"[DEBUG] Update ready\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 791675166837046,
+					"parameters": {
+						"seconds": "0"
+					}
+				}
+			],
+			"sid": 368479293880174,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "RPGText",
+							"sid": 890284827607274,
+							"parameters": {
+								"instance-variable": "Name",
+								"comparison": 0,
+								"value": "\"Update\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "RPGText",
+							"sid": 989726922429813,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "RPGText",
+							"sid": 773819482594290,
+							"parameters": {
+								"text": "\"UPDATE AVAILABLE.\" & newline & \"PLEASE REFRESH THE PAGE.\""
+							}
+						}
+					],
+					"sid": 590699814747872
+				}
+			]
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MainMenu",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 6312807226621018,
+							"parameters": {
+								"name": "\"MenuMain\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "MenuItem",
+							"sid": 8029955601129796
+						},
+						{
+							"id": "destroy",
+							"objectClass": "DefaultFont",
+							"sid": 2667792126594554
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 7882418674263834,
+							"parameters": {
+								"name": "\"MenuBackAction\"",
+								"parameter-n": [
+									"\"\""
+								]
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 5097830643532841,
+							"parameters": {
+								"object-to-create": "DefaultFont",
+								"layer": "0",
+								"x": "0",
+								"y": "32"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "DefaultFont",
+							"sid": 9572232690273980,
+							"parameters": {
+								"width": "640",
+								"height": "32"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "DefaultFont",
+							"sid": 2377617122476924,
+							"parameters": {
+								"scale": "2"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DefaultFont",
+							"sid": 6017732506802038,
+							"parameters": {
+								"text": "\"Select your bad time\""
+							}
+						},
+						{
+							"id": "set-horizontal-alignment",
+							"objectClass": "DefaultFont",
+							"sid": 6681899051898119,
+							"parameters": {
+								"horizontal-alignment": "center"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 121948490218354,
+							"parameters": {
+								"name": "\"CreateMenuItem\"",
+								"parameter-n": [
+									"0",
+									"192",
+									"96",
+									"0",
+									"\"Normal\"",
+									"\"MenuModeNormal\""
+								]
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 574106720171711,
+							"parameters": {
+								"name": "\"CreateMenuItem\"",
+								"parameter-n": [
+									"0",
+									"192",
+									"128",
+									"1",
+									"\"Practice\"",
+									"\"MenuModePractice\""
+								]
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 304790185942551,
+							"parameters": {
+								"name": "\"CreateMenuItem\"",
+								"parameter-n": [
+									"0",
+									"192",
+									"160",
+									"2",
+									"\"Endless\"",
+									"\"MenuModeEndless\""
+								]
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 326311762535984,
+							"parameters": {
+								"name": "\"CreateMenuItem\"",
+								"parameter-n": [
+									"0",
+									"192",
+									"192",
+									"3",
+									"\"Single attack\"",
+									"\"MenuModeSingle\""
+								]
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 516406951993025,
+							"parameters": {
+								"name": "\"CreateMenuItem\"",
+								"parameter-n": [
+									"0",
+									"192",
+									"224",
+									"4",
+									"\"Custom attack\"",
+									"\"MenuModeCustom\""
+								]
+							}
+						}
+					],
+					"sid": 485041284869353
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 5152785738951064,
+							"parameters": {
+								"name": "\"MenuModeNormal\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 8492232441859258,
+							"parameters": {
+								"variable": "SimulatorMode",
+								"value": "MODE_NORMAL"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 6921132940594369,
+							"parameters": {
+								"layout": "BattleScreen"
+							}
+						}
+					],
+					"sid": 1934787540782705
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 630588370956338,
+							"parameters": {
+								"name": "\"MenuModePractice\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 430576558749824,
+							"parameters": {
+								"variable": "SimulatorMode",
+								"value": "MODE_PRACTICE"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 198624542462292,
+							"parameters": {
+								"layout": "BattleScreen"
+							}
+						}
+					],
+					"sid": 732992713640422
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 6357036453760765,
+							"parameters": {
+								"name": "\"MenuModeEndless\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "MenuItem",
+							"sid": 4876547611972064
+						},
+						{
+							"id": "destroy",
+							"objectClass": "DefaultFont",
+							"sid": 9716864372445080
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 3898774398935571,
+							"parameters": {
+								"name": "\"MenuBackAction\"",
+								"parameter-n": [
+									"\"MenuMain\""
+								]
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 652672334406652,
+							"parameters": {
+								"variable": "SimulatorMode",
+								"value": "MODE_ENDLESS"
+							}
+						}
+					],
+					"sid": 8566872012264114,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 7340921845684781,
+									"parameters": {
+										"name": "\"\"",
+										"start-index": "0",
+										"end-index": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 158277619791938,
+									"parameters": {
+										"name": "\"CreateMenuItem\"",
+										"parameter-n": [
+											"0",
+											"192",
+											"96 + loopindex*32",
+											"loopindex",
+											"\"Phase \" & (loopindex + 1)",
+											"\"MenuEndless\""
+										]
+									}
+								}
+							],
+							"sid": 1993663655527849
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 891253885861754,
+							"parameters": {
+								"name": "\"MenuEndless\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 958333354220335,
+							"parameters": {
+								"variable": "EndlessStage",
+								"value": "MenuStack.At(MenuStack.Width-2)"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 5426232936612767,
+							"parameters": {
+								"layout": "BattleScreen"
+							}
+						}
+					],
+					"sid": 3480766274282799
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 3488534236377242,
+							"parameters": {
+								"name": "\"MenuModeSingle\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "MenuItem",
+							"sid": 2007414306464213
+						},
+						{
+							"id": "destroy",
+							"objectClass": "DefaultFont",
+							"sid": 8210127351655443
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 4849523377919098,
+							"parameters": {
+								"name": "\"MenuBackAction\"",
+								"parameter-n": [
+									"\"MenuMain\""
+								]
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 1371758894200221,
+							"parameters": {
+								"variable": "SimulatorMode",
+								"value": "MODE_SINGLE"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 4719384433315021,
+							"parameters": {
+								"object-to-create": "DefaultFont",
+								"layer": "0",
+								"x": "0",
+								"y": "32"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "DefaultFont",
+							"sid": 9218861551471156,
+							"parameters": {
+								"width": "640",
+								"height": "32"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "DefaultFont",
+							"sid": 9096353482776744,
+							"parameters": {
+								"scale": "2"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DefaultFont",
+							"sid": 4129082167688271,
+							"parameters": {
+								"text": "\"Choose an attack\""
+							}
+						},
+						{
+							"id": "set-horizontal-alignment",
+							"objectClass": "DefaultFont",
+							"sid": 812164509132716,
+							"parameters": {
+								"horizontal-alignment": "center"
+							}
+						}
+					],
+					"sid": 8440787368101829,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for",
+									"objectClass": "System",
+									"sid": 4888335628692321,
+									"parameters": {
+										"name": "\"\"",
+										"start-index": "0",
+										"end-index": "AttackLoader.Width-1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 307989349234234,
+									"parameters": {
+										"name": "\"CreateMenuItem\"",
+										"parameter-n": [
+											"0",
+											"192",
+											"96 + loopindex*32",
+											"loopindex",
+											"AttackLoader.At(loopindex)",
+											"\"MenuSingleAttack\""
+										]
+									}
+								}
+							],
+							"sid": 2551204829762468
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 4024702740002228,
+							"parameters": {
+								"name": "\"MenuSingleAttack\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 418412347711597,
+							"parameters": {
+								"variable": "SingleAttack",
+								"value": "AttackLoader.At(MenuStack.At(MenuStack.Width-2))"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 9595352188215692,
+							"parameters": {
+								"layout": "BattleScreen"
+							}
+						}
+					],
+					"sid": 2192146727750086
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 6849994863830874,
+							"parameters": {
+								"name": "\"MenuModeCustom\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "MenuItem",
+							"sid": 5653190402635955
+						},
+						{
+							"id": "destroy",
+							"objectClass": "DefaultFont",
+							"sid": 9147357918666116
+						},
+						{
+							"id": "destroy",
+							"objectClass": "FileChooser",
+							"sid": 7873626107978393
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 1302946453882055,
+							"parameters": {
+								"name": "\"MenuBackAction\"",
+								"parameter-n": [
+									"\"MenuMain\""
+								]
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 8289907011469804,
+							"parameters": {
+								"object-to-create": "DefaultFont",
+								"layer": "0",
+								"x": "0",
+								"y": "32"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "DefaultFont",
+							"sid": 6270522023803733,
+							"parameters": {
+								"width": "640",
+								"height": "32"
+							}
+						},
+						{
+							"id": "set-scale",
+							"objectClass": "DefaultFont",
+							"sid": 9060833632224236,
+							"parameters": {
+								"scale": "2"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "DefaultFont",
+							"sid": 63601467630781,
+							"parameters": {
+								"text": "\"Custom attack\""
+							}
+						},
+						{
+							"id": "set-horizontal-alignment",
+							"objectClass": "DefaultFont",
+							"sid": 641170030262494,
+							"parameters": {
+								"horizontal-alignment": "center"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 9409175181526048,
+							"parameters": {
+								"variable": "SimulatorMode",
+								"value": "MODE_SINGLE"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 131065348070977,
+							"parameters": {
+								"name": "\"CreateMenuItem\"",
+								"parameter-n": [
+									"0",
+									"192",
+									"96",
+									"0",
+									"\"Documentation\"",
+									"\"\""
+								]
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 363254892081796,
+							"parameters": {
+								"name": "\"CreateMenuItem\"",
+								"parameter-n": [
+									"0",
+									"192",
+									"128",
+									"1",
+									"\"Load file\"",
+									"\"MenuCustomSelect\""
+								]
+							}
+						}
+					],
+					"sid": 963583744925542,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "Action",
+							"type": "string",
+							"initialValue": "",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 750606889767726
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "has-key",
+									"objectClass": "AttackList",
+									"sid": 3443274778672137,
+									"parameters": {
+										"key": "\"custom\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 679614942751458,
+									"parameters": {
+										"variable": "Action",
+										"value": "\"MenuCustomRun\""
+									}
+								}
+							],
+							"sid": 5556763763617329
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 678880668806750
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 133977934621254,
+									"parameters": {
+										"name": "\"CreateMenuItem\"",
+										"parameter-n": [
+											"0",
+											"192",
+											"160",
+											"2",
+											"\"Run attack\"",
+											"Action"
+										]
+									}
+								}
+							],
+							"sid": 933808084676421
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 1137774981259011,
+							"parameters": {
+								"name": "\"MenuCustomSelect\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "MenuItem",
+							"sid": 8400962482911318
+						},
+						{
+							"id": "destroy",
+							"objectClass": "DefaultFont",
+							"sid": 4432629290632502
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 3348489213393067,
+							"parameters": {
+								"name": "\"MenuBackAction\"",
+								"parameter-n": [
+									"\"MenuModeCustom\""
+								]
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 7277637630369302,
+							"parameters": {
+								"object-to-create": "MenuItem",
+								"layer": "0",
+								"x": "192",
+								"y": "96"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "MenuItem",
+							"sid": 2159555875386753,
+							"parameters": {
+								"instance-variable": "Created",
+								"value": "true"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 1755543219714336,
+							"parameters": {
+								"object-to-create": "FileChooser",
+								"layer": "0",
+								"x": "224",
+								"y": "96"
+							}
+						}
+					],
+					"sid": 9054944955083308
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 6709395051738056,
+							"parameters": {
+								"name": "\"MenuCustomRun\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 5872857608887822,
+							"parameters": {
+								"variable": "SingleAttack",
+								"value": "\"custom\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 3586928206039241,
+							"parameters": {
+								"layout": "BattleScreen"
+							}
+						}
+					],
+					"sid": 7985503632529348
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-changed",
+							"objectClass": "FileChooser",
+							"sid": 9102398507502320
+						}
+					],
+					"actions": [
+						{
+							"id": "request-url",
+							"objectClass": "AJAX",
+							"sid": 2309179160700937,
+							"parameters": {
+								"tag": "\"custom\"",
+								"url": "FileChooser.FileURLAt(0)"
+							}
+						}
+					],
+					"sid": 4647217044743368
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-completed",
+							"objectClass": "AJAX",
+							"sid": 8558685013424337,
+							"parameters": {
+								"tag": "\"custom\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-key",
+							"objectClass": "AttackList",
+							"sid": 3047116548548368,
+							"parameters": {
+								"key": "\"custom\"",
+								"value": "AJAX.LastData"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 9490153154596488,
+							"parameters": {
+								"object-to-create": "BattleFont",
+								"layer": "0",
+								"x": "8",
+								"y": "8"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "BattleFont",
+							"sid": 1740537707642743,
+							"parameters": {
+								"text": "\"CUSTOM ATTACK LOADED\""
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "BattleFont",
+							"sid": 5325527041498359,
+							"parameters": {
+								"width": "640"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "BattleFont",
+							"sid": 5211929348730813,
+							"parameters": {
+								"height": "32"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "BattleFont",
+							"sid": 9241165621789806,
+							"parameters": {
+								"instance-variable": "Timeout",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 3298027994454229
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 8676844751034461
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 7389657786042543,
+							"parameters": {
+								"variable": "HP",
+								"value": "MaxHP"
+							}
+						}
+					],
+					"sid": 2930222903867678
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 1041146530268575
+						},
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 7258591913794977,
+							"parameters": {
+								"name": "\"AttackLoadFinished\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 3934138391911,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 5831726787230615,
+									"parameters": {
+										"first-value": "AttackList.KeyCount",
+										"comparison": 5,
+										"second-value": "AttackLoader.Width"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 1543908224383827,
+									"parameters": {
+										"object-to-create": "PlayerHeart",
+										"layer": "0",
+										"x": "0",
+										"y": "0"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "PlayerHeart",
+									"sid": 2501214630109601,
+									"parameters": {
+										"angle": "90"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "PlayerHeart",
+									"sid": 5348712262903138,
+									"parameters": {
+										"effect": "\"Tint\"",
+										"parameter-index": "0",
+										"value": "100"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "PlayerHeart",
+									"sid": 3100769631086494,
+									"parameters": {
+										"effect": "\"Tint\"",
+										"parameter-index": "1",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-effect-parameter",
+									"objectClass": "PlayerHeart",
+									"sid": 1761116705025522,
+									"parameters": {
+										"effect": "\"Tint\"",
+										"parameter-index": "2",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "PlayerHeart",
+									"sid": 7722436274433268,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 9637040683959956,
+									"parameters": {
+										"name": "\"MenuMain\"",
+										"parameter-n": []
+									}
+								}
+							],
+							"sid": 9761831204163876,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "FirstStart",
+									"type": "number",
+									"initialValue": "1",
+									"comment": "",
+									"isStatic": true,
+									"isConstant": false,
+									"sid": 9570519099240380
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 4646122072848713,
+											"parameters": {
+												"variable": "FirstStart",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 2686144668273752,
+											"parameters": {
+												"variable": "FirstStart",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 6664513252215855,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 9775557357179388,
+													"parameters": {
+														"first-value": "Browser.QueryParam(\"mode\")",
+														"comparison": 0,
+														"second-value": "\"normal\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 7856715718170849,
+													"parameters": {
+														"variable": "SimulatorMode",
+														"value": "MODE_NORMAL"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 2250937489427595,
+													"parameters": {
+														"layout": "BattleScreen"
+													}
+												}
+											],
+											"sid": 1419878553554108
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 7503384418264523,
+													"parameters": {
+														"first-value": "Browser.QueryParam(\"mode\")",
+														"comparison": 0,
+														"second-value": "\"endless1\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 2615427988409121,
+													"parameters": {
+														"variable": "SimulatorMode",
+														"value": "MODE_ENDLESS"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 3348766332315247,
+													"parameters": {
+														"variable": "EndlessStage",
+														"value": "0"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 7000769931317483,
+													"parameters": {
+														"layout": "BattleScreen"
+													}
+												}
+											],
+											"sid": 4698512175436133
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 484871644179359,
+													"parameters": {
+														"first-value": "Browser.QueryParam(\"mode\")",
+														"comparison": 0,
+														"second-value": "\"endless2\""
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 6999416949166913,
+													"parameters": {
+														"variable": "SimulatorMode",
+														"value": "MODE_ENDLESS"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 474366002640576,
+													"parameters": {
+														"variable": "EndlessStage",
+														"value": "1"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 8062297581304893,
+													"parameters": {
+														"layout": "BattleScreen"
+													}
+												}
+											],
+											"sid": 9073934813284888
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 8615747155016074,
+													"parameters": {
+														"first-value": "Browser.QueryParam(\"mode\")",
+														"comparison": 0,
+														"second-value": "\"single\""
+													}
+												},
+												{
+													"id": "has-key",
+													"objectClass": "AttackList",
+													"sid": 3953270010473576,
+													"parameters": {
+														"key": "Browser.QueryParam(\"attack\")"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 2855488460274073,
+													"parameters": {
+														"variable": "SimulatorMode",
+														"value": "MODE_SINGLE"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 5672583306802497,
+													"parameters": {
+														"variable": "SingleAttack",
+														"value": "Browser.QueryParam(\"attack\")"
+													}
+												},
+												{
+													"id": "go-to-layout",
+													"objectClass": "System",
+													"sid": 9484533986639156,
+													"parameters": {
+														"layout": "BattleScreen"
+													}
+												}
+											],
+											"sid": 2476943766740757
+										}
+									]
+								}
+							]
+						}
+					],
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 8804230401905531
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 4814368117172139,
+							"parameters": {
+								"name": "\"RunMenu\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 8117646656898948
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "MenuItem",
+							"sid": 9954261844587416,
+							"parameters": {
+								"instance-variable": "ID",
+								"comparison": 0,
+								"value": "MenuStack.Back"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "PlayerHeart",
+							"sid": 5597482814778178,
+							"parameters": {
+								"x": "MenuItem.X + 8"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "PlayerHeart",
+							"sid": 5742475648674647,
+							"parameters": {
+								"y": "MenuItem.Y + 12"
+							}
+						},
+						{
+							"id": "scroll-to-y",
+							"objectClass": "System",
+							"sid": 8533637664891725,
+							"parameters": {
+								"y": "MenuItem.Y - 16"
+							}
+						}
+					],
+					"sid": 1750963108900187
+				}
+			],
+			"sid": 7618724697415427
+		}
+	],
+	"sid": 211971056287817
+}

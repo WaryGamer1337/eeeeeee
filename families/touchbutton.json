@@ -1,0 +1,25 @@
+{
+	"name": "TouchButton",
+	"plugin-id": "Sprite",
+	"sid": 902272746554209,
+	"instanceVariables": [
+		{
+			"name": "TouchID",
+			"type": "number",
+			"desc": "",
+			"sid": 636958093485166
+		},
+		{
+			"name": "Pressed",
+			"type": "boolean",
+			"desc": "",
+			"sid": 875789127674825
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"TouchA",
+		"TouchB"
+	]
+}

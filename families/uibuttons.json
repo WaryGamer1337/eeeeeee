@@ -1,0 +1,27 @@
+{
+	"name": "UIButtons",
+	"plugin-id": "Sprite",
+	"sid": 9802428034038080,
+	"instanceVariables": [
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"sid": 3161584809306413
+		},
+		{
+			"name": "Action",
+			"type": "string",
+			"desc": "",
+			"sid": 5414051533652294
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"UIAct",
+		"UIFight",
+		"UIItem",
+		"UIMercy"
+	]
+}

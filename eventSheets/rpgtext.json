@@ -1,0 +1,595 @@
+{
+	"name": "RPGText",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "RPGText",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 8469163216815554
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-instvar",
+							"objectClass": "RPGText",
+							"sid": 9960523751992424,
+							"parameters": {
+								"instance-variable": "T",
+								"value": "dt"
+							}
+						}
+					],
+					"sid": 696621310651237
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "RPGText",
+							"sid": 2634417579601394,
+							"parameters": {
+								"instance-variable": "CurrentChar",
+								"comparison": 2,
+								"value": "len(RPGText.FullText)"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "RPGText",
+							"sid": 2022022212601419,
+							"parameters": {
+								"instance-variable": "T",
+								"comparison": 5,
+								"value": "1/30"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "RPGText",
+							"sid": 408524020471193,
+							"parameters": {
+								"instance-variable": "T",
+								"value": "1/30"
+							}
+						},
+						{
+							"id": "add-to-instvar",
+							"objectClass": "RPGText",
+							"sid": 8362167824849778,
+							"parameters": {
+								"instance-variable": "CurrentChar",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "RPGText",
+							"sid": 7518104924206699,
+							"parameters": {
+								"text": "left(RPGText.FullText, RPGText.CurrentChar)"
+							}
+						}
+					],
+					"sid": 4314056516822189,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "RPGText",
+									"sid": 6705263475186715,
+									"parameters": {
+										"instance-variable": "Voice",
+										"comparison": 1,
+										"value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play-by-name",
+									"objectClass": "Audio",
+									"sid": 7355169452177231,
+									"parameters": {
+										"folder": "sounds",
+										"audio-file-name": "RPGText.Voice",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								}
+							],
+							"sid": 9250345795727428
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "RPGText",
+							"sid": 968785782013304,
+							"parameters": {
+								"instance-variable": "Interactive"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 6126635417784157,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "VPad",
+									"sid": 73458705002315,
+									"parameters": {
+										"instance-variable": "Confirm",
+										"comparison": 4,
+										"value": "VPad.LastConfirm"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "RPGText",
+									"sid": 4918447702662735,
+									"parameters": {
+										"instance-variable": "CurrentChar",
+										"comparison": 0,
+										"value": "len(RPGText.FullText)"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "RPGText",
+									"sid": 7256536697104731
+								}
+							],
+							"sid": 5240008180931907
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "VPad",
+									"sid": 5236349884176463,
+									"parameters": {
+										"instance-variable": "Cancel",
+										"comparison": 4,
+										"value": "VPad.LastCancel"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "RPGText",
+									"sid": 3103315003842606,
+									"parameters": {
+										"instance-variable": "CurrentChar",
+										"value": "len(RPGText.FullText)"
+									}
+								},
+								{
+									"id": "set-text",
+									"objectClass": "RPGText",
+									"sid": 2760218144974743,
+									"parameters": {
+										"text": "RPGText.FullText"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "RPGText",
+									"sid": 8328202362150768,
+									"parameters": {
+										"instance-variable": "T",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 5817292140589924
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "RPGText",
+							"sid": 3382842543446457,
+							"parameters": {
+								"instance-variable": "Interactive"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "RPGText",
+							"sid": 5381345791344315,
+							"parameters": {
+								"instance-variable": "CurrentChar",
+								"comparison": 0,
+								"value": "len(RPGText.FullText)"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "RPGText",
+							"sid": 1451065962773302,
+							"parameters": {
+								"instance-variable": "Timeout",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-instvar",
+							"objectClass": "RPGText",
+							"sid": 9660525180283580,
+							"parameters": {
+								"instance-variable": "Timeout",
+								"value": "min(dt, RPGText.Timeout)"
+							}
+						}
+					],
+					"sid": 3806788914992198,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "RPGText",
+									"sid": 5494837275376142,
+									"parameters": {
+										"instance-variable": "Timeout",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "RPGText",
+									"sid": 4066830284556114
+								}
+							],
+							"sid": 9591886275089396
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "RPGText",
+							"sid": 8366693311345256
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "RPGText",
+							"sid": 3443053290518538,
+							"parameters": {
+								"instance-variable": "EndFunc",
+								"comparison": 1,
+								"value": "\"\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 6795146118420306,
+							"parameters": {
+								"name": "RPGText.EndFunc",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 8218860668555562
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 9245863583993516,
+							"parameters": {
+								"name": "\"SansText\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 5140099445205868,
+							"parameters": {
+								"object-to-create": "SpeechBubble",
+								"layer": "\"Enemies\"",
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "SpeechBubble",
+							"sid": 5215295811409118,
+							"parameters": {
+								"x": "SansLegs.X + 64"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "SpeechBubble",
+							"sid": 521153523069346,
+							"parameters": {
+								"y": "SansLegs.Y - 128"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 4187210746447719,
+							"parameters": {
+								"object-to-create": "SansFont",
+								"layer": "\"Enemies\"",
+								"x": "0",
+								"y": "0"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "SansFont",
+							"sid": 532799251136149,
+							"parameters": {
+								"x": "SpeechBubble.X + 32"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "SansFont",
+							"sid": 2099097229921674,
+							"parameters": {
+								"y": "SpeechBubble.Y + 16"
+							}
+						},
+						{
+							"id": "set-width",
+							"objectClass": "SansFont",
+							"sid": 7720130521571646,
+							"parameters": {
+								"width": "256"
+							}
+						},
+						{
+							"id": "set-height",
+							"objectClass": "SansFont",
+							"sid": 146134970176092,
+							"parameters": {
+								"height": "64"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "SansFont",
+							"sid": 4200735038146086,
+							"parameters": {
+								"effect": "\"Tint\"",
+								"parameter-index": "0",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "SansFont",
+							"sid": 942322139526429,
+							"parameters": {
+								"effect": "\"Tint\"",
+								"parameter-index": "1",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "SansFont",
+							"sid": 17559158360722,
+							"parameters": {
+								"effect": "\"Tint\"",
+								"parameter-index": "2",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "SansFont",
+							"sid": 4926322472318186,
+							"parameters": {
+								"text": "\"\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SansFont",
+							"sid": 9297394273649140,
+							"parameters": {
+								"instance-variable": "Voice",
+								"value": "\"SansSpeak\""
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "SansFont",
+							"sid": 3579480278776148,
+							"parameters": {
+								"instance-variable": "FullText",
+								"value": "Function.Param(0)"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "SansFont",
+							"sid": 8663644470251375,
+							"parameters": {
+								"instance-variable": "Interactive",
+								"value": "true"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 2408878459908325,
+							"parameters": {
+								"name": "\"TLPause\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 9966046875707704,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-parameter",
+									"objectClass": "Function",
+									"sid": 2650531886532879,
+									"parameters": {
+										"index": "1",
+										"comparison": 0,
+										"value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "SansFont",
+									"sid": 8413461453554266,
+									"parameters": {
+										"instance-variable": "EndFunc",
+										"value": "\"EndSansText\""
+									}
+								}
+							],
+							"sid": 7450123142226868
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-parameter",
+									"objectClass": "Function",
+									"sid": 7676177512362368,
+									"parameters": {
+										"index": "1",
+										"comparison": 1,
+										"value": "\"\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "SansFont",
+									"sid": 2772521790304481,
+									"parameters": {
+										"instance-variable": "EndFunc",
+										"value": "Function.Param(1)"
+									}
+								}
+							],
+							"sid": 3101331065007093
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "SpeechBubble",
+							"sid": 6643684039535598
+						},
+						{
+							"id": "effects-are-supported",
+							"objectClass": "System",
+							"sid": 4962568159748828,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "SpeechBubble",
+							"sid": 6110128284087691,
+							"parameters": {
+								"animation": "\"NoEffects\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 9808369736759164
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-function",
+							"objectClass": "Function",
+							"sid": 5697007384212404,
+							"parameters": {
+								"name": "\"EndSansText\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "SpeechBubble",
+							"sid": 1037245862595152
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 786833740848337,
+							"parameters": {
+								"name": "\"TLResume\"",
+								"parameter-n": []
+							}
+						}
+					],
+					"sid": 6860576825530436
+				}
+			],
+			"sid": 8296376404468187
+		}
+	],
+	"sid": 940257241465234
+}

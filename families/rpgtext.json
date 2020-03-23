@@ -1,0 +1,68 @@
+{
+	"name": "RPGText",
+	"plugin-id": "Spritefont2",
+	"sid": 8627438680975019,
+	"instanceVariables": [
+		{
+			"name": "Name",
+			"type": "string",
+			"desc": "",
+			"sid": 8126938230629388
+		},
+		{
+			"name": "Voice",
+			"type": "string",
+			"desc": "",
+			"sid": 7739643538975967
+		},
+		{
+			"name": "FullText",
+			"type": "string",
+			"desc": "",
+			"sid": 4090187800761089
+		},
+		{
+			"name": "EndFunc",
+			"type": "string",
+			"desc": "",
+			"sid": 8768540262486332
+		},
+		{
+			"name": "Interactive",
+			"type": "boolean",
+			"desc": "",
+			"sid": 2703717793020135
+		},
+		{
+			"name": "CurrentChar",
+			"type": "number",
+			"desc": "",
+			"sid": 8429195992300595
+		},
+		{
+			"name": "T",
+			"type": "number",
+			"desc": "",
+			"sid": 9067313364631326
+		},
+		{
+			"name": "Timeout",
+			"type": "number",
+			"desc": "",
+			"sid": 4487571781562274
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "tint",
+			"name": "Tint"
+		}
+	],
+	"members": [
+		"BattleFont",
+		"DamageFont",
+		"DefaultFont",
+		"SansFont"
+	]
+}

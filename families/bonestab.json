@@ -1,0 +1,49 @@
+{
+	"name": "BoneStab",
+	"plugin-id": "NinePatch",
+	"sid": 9321183475132962,
+	"instanceVariables": [
+		{
+			"name": "Direction",
+			"type": "number",
+			"desc": "",
+			"sid": 9712410343672044
+		},
+		{
+			"name": "Distance",
+			"type": "number",
+			"desc": "",
+			"sid": 1340413306933887
+		},
+		{
+			"name": "DestX",
+			"type": "number",
+			"desc": "",
+			"sid": 7626491151499593
+		},
+		{
+			"name": "DestY",
+			"type": "number",
+			"desc": "",
+			"sid": 4662037835176925
+		},
+		{
+			"name": "StayTime",
+			"type": "number",
+			"desc": "",
+			"sid": 4383237448031349
+		},
+		{
+			"name": "Reverse",
+			"type": "boolean",
+			"desc": "",
+			"sid": 510004270528703
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"BoneStabH",
+		"BoneStabV"
+	]
+}

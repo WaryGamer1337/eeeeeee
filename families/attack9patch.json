@@ -1,0 +1,41 @@
+{
+	"name": "Attack9Patch",
+	"plugin-id": "NinePatch",
+	"sid": 9590353435551898,
+	"instanceVariables": [
+		{
+			"name": "Damage",
+			"type": "number",
+			"desc": "",
+			"sid": 6677681737098705
+		},
+		{
+			"name": "Karma",
+			"type": "number",
+			"desc": "",
+			"sid": 6030229564139285
+		},
+		{
+			"name": "Color",
+			"type": "number",
+			"desc": "",
+			"sid": 821640292253391
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "tint",
+			"name": "Tint"
+		}
+	],
+	"members": [
+		"BoneH",
+		"BoneStabH",
+		"BoneStabV",
+		"BoneStabWarn",
+		"BoneV",
+		"Platform1",
+		"Platform2"
+	]
+}

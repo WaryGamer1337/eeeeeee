@@ -1,0 +1,290 @@
+{
+	"name": "Items",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "ItemType, ItemMod, ItemName1, ItemName2"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 8787826234108106
+				},
+				{
+					"id": "is-empty",
+					"objectClass": "ItemDB",
+					"sid": 1911880163537183
+				}
+			],
+			"actions": [
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"99",
+							"\"Butterscotch Pie\"",
+							"\"Pie\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"99",
+							"\"MOAR PIE\"",
+							"\"M. Pie\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"99",
+							"\"piepiepie\"",
+							"\"Pie Pie Pie\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"99",
+							"\"Legendary pie\"",
+							"\"L. Pie\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"99",
+							"\"Legendary pie\"",
+							"\"L. Pie\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"99",
+							"\"Legendary pie\"",
+							"\"L. Pie\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"99",
+							"\"Legendary pie\"",
+							"\"L. Pie\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"99",
+							"\"Legendary pie\"",
+							"\"L. Pie\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"99",
+							"\"Legendary pie\"",
+							"\"L. Pie\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"99",
+							"\"Legendary pie\"",
+							"\"L. Pie\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"9900000",
+							"\"Legendary pie\"",
+							"\"L. Pie\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"9900000",
+							"\"Legendary pie\"",
+							"\"L. Pie\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"990000000",
+							"\"Legendary pie\"",
+							"\"L. Pie\""
+						]
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 3943517466350452,
+					"parameters": {
+						"name": "\"RegisterItem\"",
+						"parameter-n": [
+							"0",
+							"99000000000000000000000000",
+							"\"Legendary pie\"",
+							"\"L. Pie\""
+						]
+					}
+				}
+			],
+			"sid": 2752143210391959
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 363661523986421,
+					"parameters": {
+						"name": "\"RegisterItem\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "push",
+					"objectClass": "ItemDB",
+					"sid": 5239690354155186,
+					"parameters": {
+						"where": "back",
+						"value": "0",
+						"axis": "x"
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "ItemDB",
+					"sid": 2395370485202404,
+					"parameters": {
+						"x": "ItemDB.Width-1",
+						"y": "0",
+						"value": "Function.Param(0)"
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "ItemDB",
+					"sid": 2495033935705209,
+					"parameters": {
+						"x": "ItemDB.Width-1",
+						"y": "1",
+						"value": "Function.Param(1)"
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "ItemDB",
+					"sid": 7774260971611081,
+					"parameters": {
+						"x": "ItemDB.Width-1",
+						"y": "2",
+						"value": "Function.Param(2)"
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "ItemDB",
+					"sid": 1305926164034302,
+					"parameters": {
+						"x": "ItemDB.Width-1",
+						"y": "3",
+						"value": "Function.Param(3)"
+					}
+				}
+			],
+			"sid": 3233093914736004
+		}
+	],
+	"sid": 651984939616064
+}

@@ -1,0 +1,24 @@
+{
+	"name": "AttackTiled",
+	"plugin-id": "TiledBg",
+	"sid": 9784977049754560,
+	"instanceVariables": [
+		{
+			"name": "Damage",
+			"type": "number",
+			"desc": "",
+			"sid": 5846064141855004
+		},
+		{
+			"name": "Karma",
+			"type": "number",
+			"desc": "",
+			"sid": 4419610502870706
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"GasterBlastHit"
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"name": "Bone",
+	"plugin-id": "NinePatch",
+	"sid": 2013892859044994,
+	"instanceVariables": [
+		{
+			"name": "Direction",
+			"type": "number",
+			"desc": "",
+			"sid": 2353520185577067
+		},
+		{
+			"name": "Speed",
+			"type": "number",
+			"desc": "",
+			"sid": 8541710245044527
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"BoneH",
+		"BoneV"
+	]
+}

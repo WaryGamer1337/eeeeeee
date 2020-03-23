@@ -1,0 +1,156 @@
+{
+	"name": "Globals",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "HEARTMODE_RED",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 2975789364452609
+		},
+		{
+			"eventType": "variable",
+			"name": "HEARTMODE_BLUE",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 6376919357343526
+		},
+		{
+			"eventType": "variable",
+			"name": "MODE_NORMAL",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 7136545053781815
+		},
+		{
+			"eventType": "variable",
+			"name": "MODE_ENDLESS",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 2256941513066222
+		},
+		{
+			"eventType": "variable",
+			"name": "MODE_SINGLE",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 7019692061495417
+		},
+		{
+			"eventType": "variable",
+			"name": "MODE_PRACTICE",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": true,
+			"sid": 631186454787328
+		},
+		{
+			"eventType": "variable",
+			"name": "SimulatorMode",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 2567313271818781
+		},
+		{
+			"eventType": "variable",
+			"name": "EndlessStage",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 1966297049622465
+		},
+		{
+			"eventType": "variable",
+			"name": "PracticeTarget",
+			"type": "number",
+			"initialValue": "60",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 824857649224256
+		},
+		{
+			"eventType": "variable",
+			"name": "SingleAttack",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 9637412728316300
+		},
+		{
+			"eventType": "variable",
+			"name": "Name",
+			"type": "string",
+			"initialValue": "Chara",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 8522084662131715
+		},
+		{
+			"eventType": "variable",
+			"name": "HP",
+			"type": "number",
+			"initialValue": "92",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 4067313995094888
+		},
+		{
+			"eventType": "variable",
+			"name": "MaxHP",
+			"type": "number",
+			"initialValue": "92",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 2742940924955148
+		},
+		{
+			"eventType": "variable",
+			"name": "KR",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 2189987320058474
+		},
+		{
+			"eventType": "variable",
+			"name": "KR_T",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 8948293770944489
+		}
+	],
+	"sid": 226337109402129
+}
