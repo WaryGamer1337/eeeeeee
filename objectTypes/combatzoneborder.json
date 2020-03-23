@@ -1,0 +1,26 @@
+{
+	"name": "CombatZoneBorder",
+	"plugin-id": "TiledBg",
+	"sid": 6657741784745805,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 986637488598136
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 4,
+		"height": 4,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 13,
+		"useCollisionPoly": true
+	}
+}

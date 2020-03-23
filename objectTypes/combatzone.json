@@ -1,0 +1,51 @@
+{
+	"name": "CombatZone",
+	"plugin-id": "NinePatch",
+	"sid": 141231765387603,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "TargetLeft",
+			"type": "number",
+			"desc": "",
+			"sid": 6021697186517032
+		},
+		{
+			"name": "TargetTop",
+			"type": "number",
+			"desc": "",
+			"sid": 7358547809624895
+		},
+		{
+			"name": "TargetRight",
+			"type": "number",
+			"desc": "",
+			"sid": 1387227575863189
+		},
+		{
+			"name": "TargetBottom",
+			"type": "number",
+			"desc": "",
+			"sid": 9275911755738286
+		},
+		{
+			"name": "InfoText",
+			"type": "string",
+			"desc": "",
+			"sid": 9266371524172020
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 16,
+		"height": 16,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 12,
+		"useCollisionPoly": true
+	}
+}

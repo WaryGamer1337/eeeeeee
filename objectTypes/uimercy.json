@@ -1,0 +1,74 @@
+{
+	"name": "UIMercy",
+	"plugin-id": "Sprite",
+	"sid": 3900276529955833,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 110,
+						"height": 42,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 10,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Heart",
+								"x": 0.145455,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 5127942938396299,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 110,
+						"height": 42,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 11,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Heart",
+								"x": 0.145455,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 4270938902148832,
+				"name": "Highlight",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

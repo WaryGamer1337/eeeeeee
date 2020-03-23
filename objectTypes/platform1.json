@@ -1,0 +1,50 @@
+{
+	"name": "Platform1",
+	"plugin-id": "NinePatch",
+	"sid": 1226268899238104,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Direction",
+			"type": "number",
+			"desc": "",
+			"sid": 4182532409429375
+		},
+		{
+			"name": "Speed",
+			"type": "number",
+			"desc": "",
+			"sid": 9338468636982498
+		},
+		{
+			"name": "Reverse",
+			"type": "boolean",
+			"desc": "",
+			"sid": 1757310495919901
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "jumpthru",
+			"name": "Jumpthru",
+			"sid": 2517055594929798
+		},
+		{
+			"behaviorId": "custom",
+			"name": "CustomMovement",
+			"sid": 8396425350937595
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 16,
+		"height": 7,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 73,
+		"useCollisionPoly": true
+	}
+}

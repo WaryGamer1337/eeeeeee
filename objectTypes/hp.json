@@ -1,0 +1,51 @@
+{
+	"name": "HP",
+	"plugin-id": "Sprite",
+	"sid": 1931015301211759,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 23,
+						"height": 10,
+						"originX": 0,
+						"originY": 1,
+						"originalSource": "C:\\Users\\Jcw87\\Documents\\Undertale Rip\\Sprites\\spr_hpname_0.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 16,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.956522,
+								0.1,
+								0.956522,
+								0.5,
+								0.826087,
+								0.6,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 8343756916975768,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

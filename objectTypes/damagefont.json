@@ -1,0 +1,20 @@
+{
+	"name": "DamageFont",
+	"plugin-id": "Spritefont2",
+	"sid": 501546311307215,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 528,
+		"height": 192,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\Users\\Jcw87\\Pictures\\UndertaleDamageFont.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 86,
+		"useCollisionPoly": true
+	}
+}

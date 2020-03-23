@@ -1,0 +1,431 @@
+{
+	"name": "SansBody",
+	"plugin-id": "Sprite",
+	"sid": 6007327897630886,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 70,
+						"originX": 0.46875,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 36,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.46875,
+								"y": 0.4
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 70,
+						"originX": 0.46875,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 37,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.46875,
+								"y": 0.385714
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 70,
+						"originX": 0.46875,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 38,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.984375,
+								0,
+								0.984375,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.46875,
+								"y": 0.428571
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 70,
+						"originX": 0.46875,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 39,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.46875,
+								"y": 0.442857
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 6043785673298376,
+				"name": "HandDown",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 15
+			},
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 70,
+						"originX": 0.46875,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 40,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.46875,
+								"y": 0.428571
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 70,
+						"originX": 0.46875,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 41,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.46875,
+								"y": 0.442857
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 70,
+						"originX": 0.46875,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 42,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.46875,
+								"y": 0.4
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 70,
+						"originX": 0.46875,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 43,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.46875,
+								"y": 0.385714
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 64,
+						"height": 70,
+						"originX": 0.46875,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 44,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.46875,
+								"y": 0.4
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 6693843986666905,
+				"name": "HandUp",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 15
+			},
+			{
+				"frames": [
+					{
+						"width": 96,
+						"height": 48,
+						"originX": 0.34375,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 45,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.34375,
+								"y": 0.125
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 96,
+						"height": 48,
+						"originX": 0.34375,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 46,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.322917,
+								"y": 0.125
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 96,
+						"height": 48,
+						"originX": 0.34375,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 47,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.3125,
+								"y": 0.125
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 96,
+						"height": 48,
+						"originX": 0.34375,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 48,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.375,
+								"y": 0.125
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 96,
+						"height": 48,
+						"originX": 0.34375,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 49,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.354167,
+								"y": 0.125
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 2519219101455278,
+				"name": "HandRight",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 15
+			},
+			{
+				"frames": [
+					{
+						"width": 96,
+						"height": 48,
+						"originX": 0.34375,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 50,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.354167,
+								"y": 0.125
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 96,
+						"height": 48,
+						"originX": 0.34375,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 51,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.375,
+								"y": 0.125
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 96,
+						"height": 48,
+						"originX": 0.34375,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 52,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.3125,
+								"y": 0.125
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 96,
+						"height": 48,
+						"originX": 0.34375,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 53,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.322917,
+								"y": 0.125
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 96,
+						"height": 48,
+						"originX": 0.34375,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 54,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.34375,
+								"y": 0.125
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 1931647922176485,
+				"name": "HandLeft",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 15
+			}
+		],
+		"subfolders": []
+	}
+}

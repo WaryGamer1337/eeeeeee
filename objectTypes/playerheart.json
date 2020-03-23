@@ -1,0 +1,114 @@
+{
+	"name": "PlayerHeart",
+	"plugin-id": "Sprite",
+	"sid": 5960708907117077,
+	"isGlobal": true,
+	"instanceVariables": [
+		{
+			"name": "Mode",
+			"type": "number",
+			"desc": "",
+			"sid": 6313592074891908
+		},
+		{
+			"name": "Slammed",
+			"type": "boolean",
+			"desc": "",
+			"sid": 4448468745440906
+		},
+		{
+			"name": "SlamDamage",
+			"type": "boolean",
+			"desc": "",
+			"sid": 122041775148508
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "custom",
+			"name": "CustomMovement",
+			"sid": 8958058217944609
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "tint",
+			"name": "Tint"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 93,
+						"collisionPoly": {
+							"points": [
+								0,
+								1,
+								0,
+								0,
+								1,
+								0,
+								1,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 3948179004351251,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 94,
+						"collisionPoly": {
+							"points": [
+								1,
+								1,
+								0,
+								1,
+								0,
+								0,
+								1,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 9412816471889478,
+				"name": "Split",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

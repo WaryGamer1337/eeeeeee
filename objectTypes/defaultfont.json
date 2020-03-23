@@ -1,0 +1,20 @@
+{
+	"name": "DefaultFont",
+	"plugin-id": "Spritefont2",
+	"sid": 1422059525027614,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 160,
+		"height": 96,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "C:\\Users\\Jcw87\\Pictures\\UndertaleDefaultFont.png",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 85,
+		"useCollisionPoly": true
+	}
+}

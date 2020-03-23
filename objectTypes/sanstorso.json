@@ -1,0 +1,107 @@
+{
+	"name": "SansTorso",
+	"plugin-id": "Sprite",
+	"sid": 6308750117528714,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "T",
+			"type": "number",
+			"desc": "",
+			"sid": 3683915590450527
+		},
+		{
+			"name": "OffsetX",
+			"type": "number",
+			"desc": "",
+			"sid": 7388070819070914
+		},
+		{
+			"name": "OffsetY",
+			"type": "number",
+			"desc": "",
+			"sid": 6179632542687228
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 54,
+						"height": 25,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 60,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.5,
+								"y": 0.24
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 1874766620274337,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 72,
+						"height": 24,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "C:\\Users\\Jcw87\\Documents\\Undertale Rip\\Sprites\\spr_sansb_torso_1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 61,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0.166667,
+								1,
+								0,
+								0.986111,
+								0.958333,
+								0.0138889,
+								0.958333
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Head",
+								"x": 0.5,
+								"y": 0.208333
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 1031353307450106,
+				"name": "Shrug",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

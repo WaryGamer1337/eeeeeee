@@ -1,0 +1,111 @@
+{
+	"name": "SansLegs",
+	"plugin-id": "Sprite",
+	"sid": 9590658027348856,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "NextAttack",
+			"type": "number",
+			"desc": "",
+			"sid": 2281878023018379
+		},
+		{
+			"name": "HitAttempts",
+			"type": "number",
+			"desc": "",
+			"sid": 900119164280441
+		},
+		{
+			"name": "DodgeState",
+			"type": "number",
+			"desc": "",
+			"sid": 5098251647105319
+		},
+		{
+			"name": "DodgeTimer",
+			"type": "number",
+			"desc": "",
+			"sid": 3509506029893432
+		},
+		{
+			"name": "JustDodged",
+			"type": "boolean",
+			"desc": "",
+			"sid": 7696753463127348
+		},
+		{
+			"name": "XSpeed",
+			"type": "number",
+			"desc": "",
+			"sid": 4058871107931012
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 44,
+						"height": 23,
+						"originX": 0.477273,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 55,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Torso",
+								"x": 0.477273,
+								"y": 0
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 5481948914165362,
+				"name": "Standing",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 52,
+						"height": 17,
+						"originX": 0.480769,
+						"originY": 0.882353,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 56,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Torso",
+								"x": 0.480769,
+								"y": 0.0588235
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 6382436399145165,
+				"name": "Sitting",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

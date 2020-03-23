@@ -1,0 +1,141 @@
+{
+	"name": "HeartShard",
+	"plugin-id": "Sprite",
+	"sid": 4095409948730649,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "custom",
+			"name": "CustomMovement",
+			"sid": 7822586923915929
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Jcw87\\Documents\\Undertale Rip\\Sprites\\spr_heartshards_0.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 95,
+						"collisionPoly": {
+							"points": [
+								0.3125,
+								0.3125,
+								0.5,
+								0.375,
+								0.625,
+								0.4375,
+								0.6875,
+								0.5,
+								0.75,
+								0.6875,
+								0.5,
+								0.625,
+								0.375,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Jcw87\\Documents\\Undertale Rip\\Sprites\\spr_heartshards_1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 96,
+						"collisionPoly": {
+							"points": [
+								0.375,
+								0.4375,
+								0.5,
+								0.375,
+								0.625,
+								0.4375,
+								0.6875,
+								0.5,
+								0.625,
+								0.625,
+								0.5,
+								0.6875,
+								0.375,
+								0.625,
+								0.3125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Jcw87\\Documents\\Undertale Rip\\Sprites\\spr_heartshards_2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 97,
+						"collisionPoly": {
+							"points": [
+								0.3125,
+								0.25,
+								0.75,
+								0.25,
+								0.75,
+								0.75,
+								0.3125,
+								0.75
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Jcw87\\Documents\\Undertale Rip\\Sprites\\spr_heartshards_3.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 98,
+						"collisionPoly": {
+							"points": [
+								0.3125,
+								0.375,
+								0.6875,
+								0.375,
+								0.6875,
+								0.6875,
+								0.3125,
+								0.6875
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 1279672314658953,
+				"name": "Default",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 15
+			}
+		],
+		"subfolders": []
+	}
+}

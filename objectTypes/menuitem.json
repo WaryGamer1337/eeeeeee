@@ -1,0 +1,68 @@
+{
+	"name": "MenuItem",
+	"plugin-id": "Sprite",
+	"sid": 1630849692866887,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ID",
+			"type": "number",
+			"desc": "",
+			"sid": 3974683574216717
+		},
+		{
+			"name": "Text",
+			"type": "string",
+			"desc": "",
+			"sid": 9053166434256352
+		},
+		{
+			"name": "Action",
+			"type": "string",
+			"desc": "",
+			"sid": 8424291498582479
+		},
+		{
+			"name": "BackAction",
+			"type": "string",
+			"desc": "",
+			"sid": 3202944525291714
+		},
+		{
+			"name": "Created",
+			"type": "boolean",
+			"desc": "",
+			"sid": 1711039613963512
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 16,
+						"height": 16,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 92,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 155770205370032,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

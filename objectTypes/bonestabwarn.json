@@ -1,0 +1,45 @@
+{
+	"name": "BoneStabWarn",
+	"plugin-id": "NinePatch",
+	"sid": 4163262150020477,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Direction",
+			"type": "number",
+			"desc": "",
+			"sid": 1708321725631724
+		},
+		{
+			"name": "Distance",
+			"type": "number",
+			"desc": "",
+			"sid": 1065051569636671
+		},
+		{
+			"name": "WarnTime",
+			"type": "number",
+			"desc": "",
+			"sid": 4829472285865959
+		},
+		{
+			"name": "StayTime",
+			"type": "number",
+			"desc": "",
+			"sid": 8313946059993536
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 16,
+		"height": 16,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 77,
+		"useCollisionPoly": true
+	}
+}

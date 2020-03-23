@@ -1,0 +1,20 @@
+{
+	"name": "BoneStabV",
+	"plugin-id": "NinePatch",
+	"sid": 8140934880742138,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 12,
+		"height": 24,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 75,
+		"useCollisionPoly": true
+	}
+}

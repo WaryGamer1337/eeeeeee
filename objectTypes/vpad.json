@@ -1,0 +1,122 @@
+{
+	"name": "VPad",
+	"plugin-id": "Sprite",
+	"sid": 9768267065126338,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Up",
+			"type": "number",
+			"desc": "",
+			"sid": 5138796745891601
+		},
+		{
+			"name": "Down",
+			"type": "number",
+			"desc": "",
+			"sid": 8231789435471491
+		},
+		{
+			"name": "Left",
+			"type": "number",
+			"desc": "",
+			"sid": 1260937868110365
+		},
+		{
+			"name": "Right",
+			"type": "number",
+			"desc": "",
+			"sid": 6641724638316461
+		},
+		{
+			"name": "Confirm",
+			"type": "number",
+			"desc": "",
+			"sid": 5899272596289875
+		},
+		{
+			"name": "Cancel",
+			"type": "number",
+			"desc": "",
+			"sid": 4616881591755484
+		},
+		{
+			"name": "Menu",
+			"type": "number",
+			"desc": "",
+			"sid": 2168213636508799
+		},
+		{
+			"name": "LastUp",
+			"type": "number",
+			"desc": "",
+			"sid": 1622459949020876
+		},
+		{
+			"name": "LastDown",
+			"type": "number",
+			"desc": "",
+			"sid": 3653498277383987
+		},
+		{
+			"name": "LastLeft",
+			"type": "number",
+			"desc": "",
+			"sid": 1053485227981488
+		},
+		{
+			"name": "LastRight",
+			"type": "number",
+			"desc": "",
+			"sid": 1751951803115606
+		},
+		{
+			"name": "LastConfirm",
+			"type": "number",
+			"desc": "",
+			"sid": 3632648287625289
+		},
+		{
+			"name": "LastCancel",
+			"type": "number",
+			"desc": "",
+			"sid": 1077614757894582
+		},
+		{
+			"name": "LastMenu",
+			"type": "number",
+			"desc": "",
+			"sid": 9025045177578852
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 0,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 6541956784524688,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

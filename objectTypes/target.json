@@ -1,0 +1,64 @@
+{
+	"name": "Target",
+	"plugin-id": "Sprite",
+	"sid": 4243712716812677,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "State",
+			"type": "number",
+			"desc": "",
+			"sid": 5475329447475825
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 548,
+						"height": 117,
+						"originX": 0.5,
+						"originY": 0.504274,
+						"originalSource": "C:\\Users\\Jcw87\\Documents\\Undertale Rip\\Sprites\\spr_target_0.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 15,
+						"collisionPoly": {
+							"points": [
+								0.0693431,
+								0.324786,
+								0.5,
+								0.00854701,
+								0.930657,
+								0.324786,
+								0.998175,
+								0.495726,
+								0.928832,
+								0.666667,
+								0.5,
+								0.982906,
+								0.0711679,
+								0.666667,
+								0.00182482,
+								0.495726
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 698907272053593,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

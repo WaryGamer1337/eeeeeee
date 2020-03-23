@@ -1,0 +1,56 @@
+{
+	"name": "TargetChoice",
+	"plugin-id": "Sprite",
+	"sid": 260070398441684,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Direction",
+			"type": "number",
+			"desc": "",
+			"sid": 6124536967285148
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 14,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Jcw87\\Documents\\Undertale Rip\\Sprites\\spr_targetchoice_0.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 18,
+						"useCollisionPoly": true,
+						"duration": 3
+					},
+					{
+						"width": 14,
+						"height": 128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\Jcw87\\Documents\\Undertale Rip\\Sprites\\spr_targetchoice_1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 19,
+						"useCollisionPoly": true,
+						"duration": 2
+					}
+				],
+				"sid": 6300494068884098,
+				"name": "Default",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 30
+			}
+		],
+		"subfolders": []
+	}
+}

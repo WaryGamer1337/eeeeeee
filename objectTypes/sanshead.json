@@ -1,0 +1,332 @@
+{
+	"name": "SansHead",
+	"plugin-id": "Sprite",
+	"sid": 2086066613273419,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "T",
+			"type": "number",
+			"desc": "",
+			"sid": 1558614189746918
+		},
+		{
+			"name": "OffsetX",
+			"type": "number",
+			"desc": "",
+			"sid": 4074126684641977
+		},
+		{
+			"name": "OffsetY",
+			"type": "number",
+			"desc": "",
+			"sid": 8283317758694072
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 27,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Sweat",
+								"x": 0.5,
+								"y": 0
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 2276838282479599,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 28,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Sweat",
+								"x": 0.5,
+								"y": 0
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 4388466239935075,
+				"name": "LookLeft",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 29,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Sweat",
+								"x": 0.5,
+								"y": 0
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 6457042623121455,
+				"name": "Wink",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 30,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Sweat",
+								"x": 0.5,
+								"y": 0
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 8089043188246127,
+				"name": "ClosedEyes",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 31,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Sweat",
+								"x": 0.5,
+								"y": 0
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 2373656401037775,
+				"name": "NoEyes",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 32,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Sweat",
+								"x": 0.5,
+								"y": 0
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 33,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Sweat",
+								"x": 0.5,
+								"y": 0
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 4492125680738175,
+				"name": "BlueEye",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "C:\\Users\\Jcw87\\Documents\\Undertale Rip\\Sprites\\spr_sansb_face_2.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 34,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.133333,
+								0.5,
+								0,
+								0.875,
+								0.133333,
+								0.96875,
+								0.5,
+								0.875,
+								0.866667,
+								0.5,
+								1,
+								0.125,
+								0.866667,
+								0.03125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Sweat",
+								"x": 0.5,
+								"y": 0
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 9055351961421600,
+				"name": "Tired1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 30,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "C:\\Users\\Jcw87\\Documents\\Undertale Rip\\Sprites\\spr_sansb_face_9.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 35,
+						"collisionPoly": {
+							"points": [
+								0.125,
+								0.133333,
+								0.5,
+								0,
+								0.875,
+								0.133333,
+								0.96875,
+								0.5,
+								0.875,
+								0.866667,
+								0.5,
+								1,
+								0.125,
+								0.866667,
+								0.03125,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Sweat",
+								"x": 0.5,
+								"y": 0
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 3836599280297155,
+				"name": "Tired2",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"name": "Platform2",
+	"plugin-id": "NinePatch",
+	"sid": 6981383464931416,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 16,
+		"height": 7,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 74,
+		"useCollisionPoly": true
+	}
+}

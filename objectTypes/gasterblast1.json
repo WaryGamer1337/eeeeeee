@@ -1,0 +1,45 @@
+{
+	"name": "GasterBlast1",
+	"plugin-id": "TiledBg",
+	"sid": 9836012384209520,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "BlastTime",
+			"type": "number",
+			"desc": "",
+			"sid": 9838422767648152
+		},
+		{
+			"name": "Timer",
+			"type": "number",
+			"desc": "",
+			"sid": 3111458825166214
+		},
+		{
+			"name": "BaseSize",
+			"type": "number",
+			"desc": "",
+			"sid": 4499117244240895
+		},
+		{
+			"name": "SineSize",
+			"type": "number",
+			"desc": "",
+			"sid": 3652599263413905
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 16,
+		"height": 16,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 66,
+		"useCollisionPoly": true
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"name": "MenuBoneBottom",
+	"plugin-id": "Sprite",
+	"sid": 761861833921609,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "State",
+			"type": "number",
+			"desc": "",
+			"sid": 992680048340304
+		},
+		{
+			"name": "Button",
+			"type": "number",
+			"desc": "",
+			"sid": 5567578753522818
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 14,
+						"height": 44,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "D:\\Documents\\Undertale Rip\\Sprites\\spr_s_boneloop_out_0.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 78,
+						"collisionPoly": {
+							"points": [
+								0.142857,
+								0.0454545,
+								0.857143,
+								0.0454545,
+								0.857143,
+								0.954545,
+								0.142857,
+								0.954545
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 4025981469830428,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

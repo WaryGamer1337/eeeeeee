@@ -1,0 +1,68 @@
+{
+	"name": "MainMenu",
+	"layers": [
+		{
+			"name": "Menu",
+			"overriden": 0,
+			"instances": [],
+			"sid": 1385025260711742,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0,
+				0,
+				0,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		},
+		{
+			"name": "Touch",
+			"overriden": 0,
+			"instances": [],
+			"sid": 352649659867774,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0,
+				0,
+				0,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"global": false
+		}
+	],
+	"sid": 4489433801173846,
+	"nonworld-instances": [],
+	"effectTypes": [],
+	"width": 640,
+	"height": 1280,
+	"unboundedScrolling": false,
+	"eventSheet": "MainMenu"
+}

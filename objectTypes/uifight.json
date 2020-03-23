@@ -1,0 +1,74 @@
+{
+	"name": "UIFight",
+	"plugin-id": "Sprite",
+	"sid": 9343233059165768,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 110,
+						"height": 42,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Heart",
+								"x": 0.145455,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 2415236592226629,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 110,
+						"height": 42,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "C:\\Users\\Jcw87\\Documents\\Undertale Rip\\Sprites\\spr_fightbt_1.png",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Heart",
+								"x": 0.145455,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 5506998997872373,
+				"name": "Highlight",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
