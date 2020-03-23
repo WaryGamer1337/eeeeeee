@@ -1,0 +1,655 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 18902,
+	"name": "Bad Time Simulator (Sans Fight)",
+	"runtime": "c3",
+	"useWorker": false,
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Function",
+			"name": "Function",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "NinePatch",
+			"name": "9-patch",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Dictionary",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "filechooser",
+			"name": "File chooser",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "jumpthru",
+			"name": "Jump-thru",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "custom",
+			"name": "Custom",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "tint",
+			"name": "Tint",
+			"author": "Scirra",
+			"version": "r189.2",
+			"bundled": false
+		}
+	],
+	"uniqueId": "3pln6vqtdnxgu",
+	"objectTypes": {
+		"items": [
+			"PlayerHeart",
+			"AttackList",
+			"MenuItem",
+			"PlayerItems",
+			"ItemDB",
+			"HeartShard",
+			"AttackLoader",
+			"MenuStack",
+			"FileChooser",
+			"Browser",
+			"PlayerHitbox"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"Gamepad",
+					"Keyboard",
+					"VPad",
+					"Function",
+					"AJAX",
+					"Audio",
+					"Touch"
+				],
+				"subfolders": [],
+				"name": "Singletons"
+			},
+			{
+				"items": [
+					"HPBackground",
+					"HPBar",
+					"KRBar",
+					"UIAct",
+					"UIFight",
+					"UIItem",
+					"UIMercy",
+					"CombatZone",
+					"CombatZoneBorder",
+					"CombatZoneClipper",
+					"Target",
+					"HP",
+					"KR",
+					"TargetChoice",
+					"Strike",
+					"CombatZoneUnclipper"
+				],
+				"subfolders": [],
+				"name": "BattleUI"
+			},
+			{
+				"items": [
+					"SansHead",
+					"SansBody",
+					"SansLegs",
+					"SansSweat",
+					"SansTorso",
+					"SpeechBubble"
+				],
+				"subfolders": [],
+				"name": "Enemies"
+			},
+			{
+				"items": [
+					"BoneH",
+					"BoneV",
+					"GasterBlast1",
+					"GasterBlaster",
+					"Platform1",
+					"Platform2",
+					"BoneStabV",
+					"BoneStabH",
+					"BoneStabWarn",
+					"MenuBoneBottom",
+					"MenuBoneLeft",
+					"GasterBlast2",
+					"GasterBlast3",
+					"GasterBlastHit"
+				],
+				"subfolders": [],
+				"name": "Attacks"
+			},
+			{
+				"items": [
+					"TLActionList",
+					"TLCurrentLine",
+					"TLVars",
+					"TLLabels"
+				],
+				"subfolders": [],
+				"name": "Timeline"
+			},
+			{
+				"items": [
+					"BattleFont",
+					"SansFont",
+					"DefaultFont",
+					"DamageFont"
+				],
+				"subfolders": [],
+				"name": "Fonts"
+			},
+			{
+				"items": [
+					"TouchA",
+					"TouchB",
+					"TouchDPad"
+				],
+				"subfolders": [],
+				"name": "TouchUI"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [
+		{
+			"members": [
+				"GasterBlast1",
+				"GasterBlast2",
+				"GasterBlast3",
+				"GasterBlaster",
+				"GasterBlastHit"
+			],
+			"selectMode": "normal"
+		},
+		{
+			"members": [
+				"Platform1",
+				"Platform2"
+			],
+			"selectMode": "normal"
+		}
+	],
+	"families": {
+		"items": [
+			"BoneStab",
+			"Bone",
+			"RPGText",
+			"UIButtons",
+			"Attack9Patch",
+			"AttackSprite",
+			"AttackTiled",
+			"TouchButton"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"BattleScreen",
+			"System",
+			"MainMenu"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Battle",
+			"InputManagement",
+			"Globals",
+			"Timeline",
+			"Fonts",
+			"RPGText",
+			"Items",
+			"AttackLoader",
+			"MainMenu",
+			"Menus"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "Ding.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 898556278552502
+				},
+				{
+					"name": "PlayerFight.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 161398410016312
+				},
+				{
+					"name": "PlayerDamaged.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 692902988702577
+				},
+				{
+					"name": "SansSpeak.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 974214938721035
+				},
+				{
+					"name": "GasterBlaster.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 706782157948128
+				},
+				{
+					"name": "BoneStab.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 524077571315103
+				},
+				{
+					"name": "Warning.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 511283603363736
+				},
+				{
+					"name": "HeartShatter.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 235534375655203
+				},
+				{
+					"name": "GasterBlast.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 795951625320067
+				},
+				{
+					"name": "Flash.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 362173924834979
+				},
+				{
+					"name": "Slam.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 829180520656680
+				},
+				{
+					"name": "MenuSelect.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 550887141977979
+				},
+				{
+					"name": "HeartSplit.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 247371069885863
+				},
+				{
+					"name": "MenuCursor.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 226265936336702
+				},
+				{
+					"name": "BattleText.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 137744546998320
+				},
+				{
+					"name": "PlayerHeal.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 267750354894709
+				},
+				{
+					"name": "GasterBlast2.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 381505977310300
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [
+				{
+					"name": "mus_zz_megalovania.ogg",
+					"type": "audio/ogg; codecs=vorbis",
+					"sid": 131637417168596
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 401882785112972
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 307371723874042
+				},
+				{
+					"name": "icon-114.png",
+					"type": "image/png",
+					"sid": 541656473151145
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 557623262262320
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 396878780501854
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 544081944390723
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "sans_intro.csv",
+					"type": "text/csv",
+					"sid": 674145613640393
+				},
+				{
+					"name": "sans_bonegap1.csv",
+					"type": "text/csv",
+					"sid": 666802293782844
+				},
+				{
+					"name": "sans_bonegap2.csv",
+					"type": "text/csv",
+					"sid": 121469072240367
+				},
+				{
+					"name": "sans_bluebone.csv",
+					"type": "text/csv",
+					"sid": 985908839694352
+				},
+				{
+					"name": "sans_platforms1.csv",
+					"type": "text/csv",
+					"sid": 357668954100553
+				},
+				{
+					"name": "sans_platforms2.csv",
+					"type": "text/csv",
+					"sid": 184816707111756
+				},
+				{
+					"name": "sans_platforms3.csv",
+					"type": "text/csv",
+					"sid": 578731141738927
+				},
+				{
+					"name": "sans_platforms4.csv",
+					"type": "text/csv",
+					"sid": 189956616637539
+				},
+				{
+					"name": "sans_platformblaster.csv",
+					"type": "text/csv",
+					"sid": 286968977630651
+				},
+				{
+					"name": "sans_platforms4hard.csv",
+					"type": "text/csv",
+					"sid": 179553690825658
+				},
+				{
+					"name": "sans_boneslideh.csv",
+					"type": "text/csv",
+					"sid": 821170038957953
+				},
+				{
+					"name": "sans_bonegap1fast.csv",
+					"type": "text/csv",
+					"sid": 391910822484082
+				},
+				{
+					"name": "sans_platformblasterfast.csv",
+					"type": "text/csv",
+					"sid": 862393387283806
+				},
+				{
+					"name": "sans_spare.csv",
+					"type": "text/csv",
+					"sid": 720108807395709
+				},
+				{
+					"name": "sans_bonestab1.csv",
+					"type": "text/csv",
+					"sid": 767122447721633
+				},
+				{
+					"name": "sans_bonestab2.csv",
+					"type": "text/csv",
+					"sid": 701279145675089
+				},
+				{
+					"name": "sans_boneslidev.csv",
+					"type": "text/csv",
+					"sid": 362648301078063
+				},
+				{
+					"name": "sans_multi1.csv",
+					"type": "text/csv",
+					"sid": 961962903963127
+				},
+				{
+					"name": "sans_randomblaster1.csv",
+					"type": "text/csv",
+					"sid": 487369974377731
+				},
+				{
+					"name": "sans_multi2.csv",
+					"type": "text/csv",
+					"sid": 768645212175272
+				},
+				{
+					"name": "sans_randomblaster2.csv",
+					"type": "text/csv",
+					"sid": 528900347694523
+				},
+				{
+					"name": "sans_bonestab3.csv",
+					"type": "text/csv",
+					"sid": 623300254334786
+				},
+				{
+					"name": "sans_multi3.csv",
+					"type": "text/csv",
+					"sid": 309299952885860
+				},
+				{
+					"name": "sans_final.csv",
+					"type": "text/csv",
+					"sid": 556822799489561
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "do you wanna have a bad time? 'cause if you visit this page... you are REALLY not going to like what happens next.",
+		"version": "1.0.0.0",
+		"author": "Jcw87",
+		"authorEmail": "",
+		"authorWebsite": "http://",
+		"appId": "com.jcw87.badtime",
+		"pixelRounding": true,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-integer-scale",
+		"fullscreenQuality": "low",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useHighDpi": true,
+		"orientations": "any",
+		"enableWebGL": true,
+		"gpuPreference": "high-performance",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "nearest",
+		"downscaling": "low",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"clearBackground": true,
+		"enhancedAccelerationPrecision": true
+	},
+	"viewportWidth": 640,
+	"viewportHeight": 480,
+	"firstLayout": "MainMenu"
+}
